@@ -22,10 +22,10 @@ show_initial: false
 show_alpha: false
 
 # button text to accept the color select
-choose_text: "Pick"
+choose_text: "Elegir"
 
 # button text to cancel selection
-cancel_text: "Cancel"
+cancel_text: "Cancelar"
 
 # choose a preferred color format to display, options: hex|hsl|rgb|name
 preferred_format: "hex"

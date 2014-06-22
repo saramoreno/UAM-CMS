@@ -15,13 +15,13 @@
 # Enter your license key
 _license_key:
 
-_language: en
+_language: es
 
 # Change if you are running Statamic in a subdirectory
 _site_root: /
 
 # Name of your site
-_site_name: Another Awesome Statamic Site
+_site_name: Historia contemporánea
 
 # Change the folder name for your content directory
 _content_root: _content
@@ -42,7 +42,7 @@ _date_format: 'F jS, Y'
 _time_format: 'g:i.s a'
 
 # Timezone
-_timezone: America/New_York
+_timezone: Europe/Madrid
 
 # List of desired taxonomy triggers
 _taxonomy:
