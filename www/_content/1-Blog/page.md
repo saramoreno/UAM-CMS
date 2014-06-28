@@ -1,6 +1,6 @@
 ---
 title: Blog
-_template: page
+_template: default
 _fieldset: page
 ---
 ### I'm nobody. I live in the wilderness, living off the land, existing on my survival skills. I often write in Latin.
