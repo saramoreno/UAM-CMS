@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+		
+		<title>
+			{{ _site_name }}
+			{{ if segment_1 }}
+			– {{ title }}
+			{{ endif }}
+		</title>
+
+		<!-- styles -->
+		{{ theme:css src="arrange" tag="true" }}
+		{{ theme:css tag="true" }}
+
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/png" href="{{ theme:img src="favicon2.png" }}">
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<div class="inner-wrapper">
+					<div class="title">
+						<h1 class="bold-heading"><a href="{{ homepage }}">{{ _site_name}}</a></h1>
+						<span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, consectetur, corrupti architecto deserunt iusto cum magni natus assum</span>
+					</div><form action="#" class="main-form">
+	        	<input type="text" placeholder="Search">
+	      	</form>
+	      	</div><!--end of inner-wrapper-->
+					<div class="hero">
+	      		<img src="http://lorempixel.com/1000/287/abstract/" alt="imagen grande">
+	    		</div>
+	    		{{ theme:partial src="nav" }}
+	    	</div>
+			</header>
+			<div class="main" role="main">
+				{{ layout_content }}
+			</div><!--end of main-->
+
+			{{ theme:partial src="footer" }}
+			
+		</div>		
+	</body>
+</html>

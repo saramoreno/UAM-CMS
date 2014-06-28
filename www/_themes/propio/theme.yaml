@@ -1,0 +1,18 @@
+theme_name: propio
+
+favorite_sites:
+  -
+    name: UAM
+    url: http://www.uam.es/
+  -
+    name: Sara
+    url: http://llbean.com
+  -
+    name: Statamic
+    url: http://statamic.com
+    
+site_twitter: sarmoji
+
+# used in the feed
+site_language: es
+contact_email: sara@redradix.com
