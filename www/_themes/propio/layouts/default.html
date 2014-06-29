@@ -12,7 +12,6 @@
 		</title>
 
 		<!-- styles -->
-		{{ theme:css src="arrange" tag="true" }}
 		{{ theme:css tag="true" }}
 
 		<!-- favicon -->
@@ -24,7 +23,9 @@
 				<div class="inner-wrapper">
 					<div class="title">
 						<h1 class="bold-heading"><a href="{{ homepage }}">{{ _site_name}}</a></h1>
-						<span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, consectetur, corrupti architecto deserunt iusto cum magni natus assum</span>
+						<span class="subtitle">
+							{{subtitle}}
+						</span>
 					</div><form action="#" class="main-form">
 	        	<input type="text" placeholder="Search">
 	      	</form>
@@ -40,7 +41,7 @@
 			</div><!--end of main-->
 
 			{{ theme:partial src="footer" }}
-			
+
 		</div>		
 	</body>
 </html>

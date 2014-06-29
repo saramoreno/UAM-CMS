@@ -1,8 +1,7 @@
 <aside class="gi one-third inline-block">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, laborum, atque earum cumque nulla voluptatem aliquam voluptates dolor quo velit vel expedita quibusdam optio laboriosam alias sequi molestias modi tenetur.</p>
   <ul class="sidebar-list">
-    {{ taxonomy:listing folder="blog" type="categories" sort_by="name" sort_dir="asc" }}
-    <li><a href="{{ url }}">{{ name }}</a></li>
-    {{ /taxonomy:listing }}
+  	{{ entries: listing folder="blog" limit="6" sort_dir="desc" }}
+  		<li><a href="{{ url }}">{{ title }}</a></li>
+  	{{ /entries: listing }}
   </ul>
 </aside>
