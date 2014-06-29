@@ -1,7 +1,11 @@
 <aside class="gi one-third inline-block">
   <ul class="sidebar-list">
-  	{{ entries: listing folder="blog" limit="6" sort_dir="desc" }}
-  		<li><a href="{{ url }}">{{ title }}</a></li>
-  	{{ /entries: listing }}
+  	{{ entries:listing folder="blog" limit="6" sort_dir="desc" }}
+  	  {{ if no_results }}
+  	  	NO RESULTS!
+  	  {{ else }}
+  		  <li><a href="{{ url }}">{{ title }}</a></li>
+  		{{ endif }}
+  	{{ /entries:listing }}
   </ul>
 </aside>

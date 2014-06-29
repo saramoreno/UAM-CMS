@@ -3,5 +3,8 @@ title: Créditos
 _template: credits
 _fieldset: credits
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eius eveniet excepturi, beatae aliquid inventore ad ipsum! Hic, tempora ipsam explicabo ut beatae fugit debitis facere, perferendis dicta molestiae blanditiis!
+- Redacción: Pepito García
+- Equipo de redacción: Pepito García, Juanito Fernández
+- Créditos fotográficos
+Imagen de cabecera:_ The Professor’s Dream,_
+Charles Robert Cockerell, 1848. Royal  Academy of Arts, London.

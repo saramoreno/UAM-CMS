@@ -1,0 +1,24 @@
+<div class="main-content">
+	<div class="wrapper">
+		<div class="big-inner-wrapper">
+			<h1 class="bold-heading">{{ title }}</h1>
+				<div class="post-entry">
+            {{ if image }}
+              <figure style="background: url({{ image }}) center no-repeat; background-size: contain; ">
+              </figure>
+            {{ endif }}
+					<div class="post-text">
+					 {{ content }}
+					</div>
+				</div>
+				<form action="#" class="main-form">
+					<h1>Deja un comentario</h1>
+					<input type="text" placeholder="Nombre">
+					<input type="text" placeholder="Correo electrónico">
+					<input type="text" placeholder="Web (opcional)">
+					<textarea name="comment" id="" cols="30" rows="10" placeholder="Comentario"></textarea>
+					<button class="button" type="submit" value="submit">Publica tu comentario</button>
+				</form>
+		</div><!--end of inner-wrappwer-->
+	</div><!--end of wrapper-->
+</div>

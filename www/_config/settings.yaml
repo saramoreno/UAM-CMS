@@ -36,7 +36,7 @@ _theme: propio
 _entry_timestamps: false
 
 # Global formatting for {{ date }} variables
-_date_format: 'F jS, Y'
+_date_format: 'd M Y'
 
 # Global formatting for time variables
 _time_format: 'g:i.s a'
@@ -160,7 +160,7 @@ _admin_theme: ascent
 
 # Customize which pages show in the control panel
 _admin_nav:
-  dashboard: false
+  dashboard: true
   pages:     true
   members:   true
   account:   true
@@ -171,7 +171,7 @@ _admin_nav:
   logout:    true
 
 # When you log in, where would you like to start?
-_admin_start_page: pages
+_admin_start_page: dashboard
 
 # Enable/Disable the ability to add new top level pages via the CP
 _enable_add_top_level_page: true

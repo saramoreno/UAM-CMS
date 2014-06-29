@@ -1,9 +1,11 @@
 ---
 first_name: Sara
 last_name: Moreno
-email: sara@redradix.com
+email: sara.morenoj@gmail.com
 roles:
+  - member
   - admin
-password: sara
+password: ""
 _uid: D9J39R53b03308b8727FJSTYYTs
+password_hash: $2a$08$0.5njFjQBnCLpZZJ2Hau7udbre2Ba8BaYr249Crv8LPCJqT5Pm/W2
 ---

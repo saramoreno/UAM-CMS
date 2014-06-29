@@ -1,6 +1,6 @@
 dashboard_main_content: >
-  <h1>Replace this if you want to customize your dashboard's content</h1>
-  <p>Hello wilderness.</p>
+  <h1>Bienvenido!</h1>
+  <p>Para modificar el contenido de la página, dirígete a Content</p>
 
 dashboard_sidebar_content: >
   <h2>Useful Links</h2>

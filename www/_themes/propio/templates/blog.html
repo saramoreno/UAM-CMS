@@ -1,0 +1,42 @@
+
+<div class="main-content">
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <div class="gi two-thirds inline-block">
+        <ul>
+        {{ entries:listing folder="blog" limit="6" sort_dir="desc" paginate="true" }}
+          <li class="post-box">
+            <div class="post-title">
+              <a href="{{ url }}">
+                <h2>{{ title }}</h2>
+              </a>
+              {{ member:profile username=author }}
+                <span class="small">Posted on <a href="{{ date }}">{{ date }}</a> by <a href="#"> {{ first_name }} {{ last_name}} </a></span>
+              {{ member }}
+            </div>
+            {{ if image }}
+              <figure style="background: url({{ image }}) center no-repeat; background-size: contain; ">
+              </figure>
+            {{ endif }}
+            <div class="post-text">
+              <p>{{ summary }}</p>
+              <a class="more" href="{{ url }}">Sigue leyendo<span class="icon icon-arrow-right"></a>
+            </div>
+          </li>
+         {{ /entries:listing }}
+        </ul>
+        <section>
+        {{ entries:pagination }}
+          {{ if previous_page }}
+            <a href="{{ previous_page }}" class="more">Previous Page</a>
+            <span class="icon icon-arrow-left"></span>
+          {{ endif }}
+          {{ if next_page }}
+            <a href="{{ next_page }}" class="more">Next Page</a>
+             <span class="icon icon-arrow-right"></span>
+          {{ endif }}
+        {{ /entries:pagination }}
+        </section>
+      </div>{{ theme:partial src="sidebar" }}
+  </div>
+</div>

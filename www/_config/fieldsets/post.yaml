@@ -6,5 +6,25 @@ fields:
     type: tags
   content:
     type: redactor
+    display: Contenido
+    image_dir: assets/img/blog
+    resize:
+    	width: 500
+    	height: 300
+    	quality: 60
+    	upsize: false
+  summary:
+  	display: Resumen
+  	type: textarea
+  image:
+	  display: Imagen de Cabecera
+	  type: file
+	  allowed: [png, gif, jpg, jpeg]
+	  destination: assets/img/blog
+	author:
+		display: Autor
+		type: users
+		required: true
+		hide: true
 
 hide: true
