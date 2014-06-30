@@ -4,7 +4,9 @@
     <div class="big-inner-wrapper">
        <p class="big-heading">Investigadores</p>
        <ul class="main-list list-sm">
-         <li><a href="{{ url }}">{{ name }}</a></li>
+       	{{ entries:listing folder="investigadores" }}
+         <li><a href="{{ url }}">{{ title }}</a></li>
+        {{ /entries:listing }}
        </ul>
     </div>
   </div>
