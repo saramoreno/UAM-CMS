@@ -768,7 +768,10 @@ header .main-form {
 /* line 21, ../sass/objects/_post-box.scss */
 .post-box figure {
   display: inline-block;
-  width: 35%;
+  width: 30%;
+  min-width: 180px;
+  background: center no-repeat; 
+  background-size: cover;
   height: 300px;
   vertical-align: top;
   overflow: hidden;
@@ -776,7 +779,6 @@ header .main-form {
   border-radius: 2px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  box-shadow: 1px 1px 3px 2px #ccc;
 }
 /* line 30, ../sass/objects/_post-box.scss */
 .post-box figure img {
@@ -804,7 +806,6 @@ header .main-form {
   .post-box figure {
     display: block;
     margin: 1em auto;
-    min-width: 250px;
   }
   /* line 57, ../sass/objects/_post-box.scss */
   .post-box .post-text {
