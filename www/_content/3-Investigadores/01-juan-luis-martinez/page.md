@@ -5,5 +5,5 @@ _fieldset: autor-list
 ---
 Publicaciones: 
 
--bla hdwlkwjbfklbsñd
--bg**kñasdnfñkad**
+-publicacion 1
+-publicacion 2

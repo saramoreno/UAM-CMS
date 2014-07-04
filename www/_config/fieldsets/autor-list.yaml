@@ -14,8 +14,6 @@ fields:
     type: textarea
     display: Breve descripción
 
-  summary:
+  content:
     type: textarea
     display: listado de publicaciones
-    instructions:
-      below: listado publicaciones

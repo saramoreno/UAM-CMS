@@ -4,6 +4,7 @@ title: Pilar Toboso
 comment: Esto es una breve biografía
 _fieldset: autor-list
 ---
-Esto son las publicaciones
-- publicacion 1
-- publicacion 2
+Publicaciones
+-publicacion 1 
+-publicacion 2
+-publicacion 3****
