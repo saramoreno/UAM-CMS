@@ -15,7 +15,9 @@
         <section>
           <h4>Entre sus últimas publicaciones destacan:</h4>
           <ul class="main-list">
-             {{ content }}
+             {{ taxonomy:listing folder="investigadores"}}
+              <li><a href="{{ url }}">{{ name }}</a></li>
+              {{ /taxonomy:listing }}
           </ul>
         </section>
     </div>
