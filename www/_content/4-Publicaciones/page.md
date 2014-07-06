@@ -1,6 +1,6 @@
 ---
 title: Publicaciones
-_fieldset: publications
+_fieldset: general
 _template: publications
 ---
 <ul>

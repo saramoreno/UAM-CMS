@@ -1,10 +1,7 @@
 ---
 title: Créditos
 _template: credits
-_fieldset: credits
+_fieldset: general
 ---
-- Redacción: Pepito García
-- Equipo de redacción: Pepito García, Juanito Fernández
-- Créditos fotográficos
-Imagen de cabecera:_ The Professor’s Dream,_
-Charles Robert Cockerell, 1848. Royal  Academy of Arts, London.
+<p>- Redacción: Pepito García&nbsp;</p><p>- Equipo de redacción: Pepito García, Juanito Fernández&nbsp;</p><p>- Créditos fotográficos
+Imagen de cabecera:&nbsp;<em>The Professor’s </em><em>Dream</em>, Charles Robert Cockerell, 1848. Royal  Academy of Arts, London.</p>
