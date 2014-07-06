@@ -686,6 +686,7 @@ table {
 /* line 5, ../sass/objects/_navegacion.scss */
 .main-nav {
   background: #333;
+  height: 50px;
 }
 /* line 11, ../sass/objects/_navegacion.scss */
 .main-nav a {
@@ -701,6 +702,21 @@ table {
 .main-nav .on {
   font-weight: 700;
   background: #4d4d4d;
+}
+
+.main-nav a.on:before, .main-nav a.on:after {
+  content: "";
+  display: block;
+}
+
+.main-nav a.on:after {
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-bottom-color: #fff;
+  position: relative;
+  top: 4px;
+  left: 50%;
 }
 @media only screen and (max-width: 49.92857em) {
   /* line 26, ../sass/objects/_navegacion.scss */
