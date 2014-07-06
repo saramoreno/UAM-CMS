@@ -1,6 +1,6 @@
 ---
 title: Grupo de investigación
 _template: about
-_fieldset: about
+_fieldset: general
 ---
-Esto es un mensaje de prueba sobre el grupo de investigación bla bla bla
+<p>Esto es un mensaje de prueba sobre el grupo de investigación bla bla bla</p>

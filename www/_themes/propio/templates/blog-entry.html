@@ -4,7 +4,9 @@
 			<h1 class="bold-heading">{{ title }}</h1>
 				<div class="post-entry">
             {{ if image }}
-              <figure style="background: url({{ image }}) center no-repeat; background-size: cover; ">
+              <figure class="left" style="background: url({{ image }}); background-size: cover"></figure>
+              {{ else }}
+              <figure class="left" style="background: url(/assets/img/woods.jpg)">
               </figure>
             {{ endif }}
 					<div class="post-text">

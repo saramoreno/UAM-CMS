@@ -752,6 +752,7 @@ header .main-form {
   border-bottom: 1px solid #e7e9ec;
   padding: .5em 1em 1em 0;
   margin-bottom: 2em;
+  overflow: hidden;
 }
 /* line 10, ../sass/objects/_post-box.scss */
 .post-box .post-title {
@@ -835,15 +836,17 @@ header .main-form {
   border-radius: 2px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  box-shadow: 1px 1px 3px 2px #ccc;
+  background-size: cover;
 }
 /* line 83, ../sass/objects/_post-box.scss */
 .post-entry figure.left {
-  margin: 0 2em 1.5em 0;
+  margin: 0 2em 1em 0;
+  background-size: cover;
 }
 /* line 87, ../sass/objects/_post-box.scss */
 .post-entry figure.right {
   margin: 1.5em 0 1.5em 2em;
+  background-size: cover;
 }
 /* line 91, ../sass/objects/_post-box.scss */
 .post-entry figure img {
@@ -991,6 +994,16 @@ aside .sidebar-list .title {
   padding: 1em 0 .5em 0;
   list-style-type: none;
   margin-left: 0;
+}
+.sidebar-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: .5em 0;
+  font-size: 17px;
+}
+
+aside li.on a {
+  color: #333;
 }
 /* line 20, ../sass/objects/_aside.scss */
 aside .sidebar-list li {
