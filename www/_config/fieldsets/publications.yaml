@@ -1,0 +1,10 @@
+fields: 
+	title: 
+		hide: true
+	slug:
+	  hide: true
+	content:
+    type: redactor
+    display: Publicaciones
+
+hide: true

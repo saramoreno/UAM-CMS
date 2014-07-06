@@ -1,8 +1,7 @@
 ---
-title: Publicaciones
-_template: publications
+title: Publicaciones2
 _fieldset: publications
+_template: researches
 ---
-### I can teach you many things. Things that will keep you alive.
-
-Prueba texto publicaciones
+<ul>
+<li>publiccion 1</li><li>publicacion 2</li><li>publicación 3</li></ul>

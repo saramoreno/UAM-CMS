@@ -10,6 +10,7 @@ fields:
     destination: assets/img/blog/
 
   content:
+    type: redactor
     display: Page Content
     required: false
     default:

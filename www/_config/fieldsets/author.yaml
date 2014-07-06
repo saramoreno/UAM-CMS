@@ -1,0 +1,18 @@
+fields: 
+	title: 
+		instructions: Introduce un nombre
+	slug:
+	  hide: true
+	image:
+	  display: Imagen del investigador
+	  type: file
+	  allowed: [png, gif, jpg, jpeg]
+	  destination: assets/img/blog
+	description:
+    type: redactor
+    display: Breve descripción
+	content:
+    display: Listado de publicaciones 
+    type: redactor
+
+hide: true

@@ -3,12 +3,9 @@
 	<div class="wrapper">
 		<div class="big-inner-wrapper">
 			<h1 class="big-heading">Publicaciones</h1>
-			<ul class="main-list">
-				{{ pages:listing }}
-         	<li><a href="{{ url }}">{{ title }}</a></li>
-        {{ /pages:listing }}
-			</ul>
-
+			<section class="main-list">
+         {{ content }}
+      </section>
 		</div>
 	</div>
 	

@@ -9,16 +9,11 @@
             </figure>
           {{ endif }}
           <div class="post-text">
-            <p>{{ comment }}</p>
+            <p>{{ description }}</p>
           </div>
         </div>
-        <section>
-          <h4>Entre sus últimas publicaciones destacan:</h4>
-          <ul class="main-list">
-             {{ taxonomy:listing folder="investigadores"}}
-              <li><a href="{{ url }}">{{ name }}</a></li>
-              {{ /taxonomy:listing }}
-          </ul>
+        <section class="main-list">
+          {{ content }}
         </section>
     </div>
   </div>
