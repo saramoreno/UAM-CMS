@@ -692,8 +692,11 @@ table {
 .main-nav a {
   color: #6c868c;
   display: inline-block;
-  padding: 15px 20px;
+  padding: 15px;
   position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Open Sans", "Helvetica Neue", Arial;
 }
 /* line 16, ../sass/objects/_navegacion.scss */
 .main-nav a:hover {
@@ -718,14 +721,20 @@ table {
   border-bottom-color: #fff;
   position: absolute;
   bottom: 0;
-  left: 60px;
+  left: 40%;
 }
-@media only screen and (max-width: 49.92857em) {
+@media only screen and (max-width: 900px) {
   /* line 26, ../sass/objects/_navegacion.scss */
   .main-nav a {
-    padding: 5px 10px;
+    padding: 10px;
   }
-}  
+}
+
+@media only screen and (max-width: 900px) {
+    .main-nav a.on:after {
+      display: none;
+    }
+  }
 
 /*------------------------------------------*\
     Header
@@ -958,41 +967,54 @@ footer p {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 20, ../sass/objects/_icons.scss */
-.icon-googleplus:before {
+.icon-user:before {
+  content: "\f007";
+}
+.icon-book:before {
+  content: "\f02d";
+}
+.icon-print:before {
+  content: "\f02f";
+}
+.icon-edit:before {
+  content: "\f044";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-group:before {
+  content: "\f0c0";
+}
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+.icon-chevron-circle-right:before {
+  content: "\f138";
+}
+.icon-long-arrow-left:before {
+  content: "\f177";
+}
+.icon-long-arrow-right:before {
+  content: "\f178";
+}
+.icon-institution:before {
+  content: "\f19c";
+}
+.icon-bullhorn:before {
   content: "\e602";
 }
-
-/* line 23, ../sass/objects/_icons.scss */
-.icon-facebook:before {
+.icon-books:before {
   content: "\e603";
 }
-
-/* line 26, ../sass/objects/_icons.scss */
-.icon-twitter:before {
-  content: "\e604";
-}
-
-/* line 29, ../sass/objects/_icons.scss */
-.icon-search:before {
-  content: "\e600";
-}
-
-/* line 32, ../sass/objects/_icons.scss */
-.icon-plus:before {
+.icon-new:before {
   content: "\e601";
 }
-
-/* line 35, ../sass/objects/_icons.scss */
-.icon-arrow-left:before {
-  content: "\e605";
-}
-
-/* line 38, ../sass/objects/_icons.scss */
 .icon-arrow-right:before {
-  content: "\e606";
+  content: "\e600";
 }
-
 /*------------------------------------------*\
     ASIDE
 \*------------------------------------------*/

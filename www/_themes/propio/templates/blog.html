@@ -21,7 +21,7 @@
             {{ endif }}
             <div class="post-text">
               <p>{{ summary }}</p>
-              <a class="more" href="{{ url }}">Sigue leyendo<span class="icon icon-arrow-right"></a>
+              <a class="more" href="{{ url }}">Sigue leyendo<span class="icon icon-long-arrow-right"></a>
             </div>
           </li>
          {{ /entries:listing }}
@@ -30,7 +30,7 @@
         {{ entries:pagination }}
           {{ if previous_page }}
             <a href="{{ previous_page }}" class="more">Previous Page</a>
-            <span class="icon icon-arrow-left"></span>
+            <span class="icon icon-long-arrow-left"></span>
           {{ endif }}
           {{ if next_page }}
             <a href="{{ next_page }}" class="more">Next Page</a>
