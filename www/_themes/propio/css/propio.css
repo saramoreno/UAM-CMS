@@ -686,21 +686,29 @@ table {
 /* line 5, ../sass/objects/_navegacion.scss */
 .main-nav {
   background: #333;
-  /*height: 50px;*/
+  height: 56px;
+}
+
+.main-nav li {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+
+.main-nav li:hover {
+  background: #4d4d4d;
 }
 /* line 11, ../sass/objects/_navegacion.scss */
 .main-nav a {
-  color: #6c868c;
-  display: inline-block;
   padding: 15px;
-  position: relative;
+  height: 100%;
+  display: block;
+  color: #fff;
   text-transform: uppercase;
   font-size: 12px;
   font-family: "Open Sans", "Helvetica Neue", Arial;
-}
-/* line 16, ../sass/objects/_navegacion.scss */
-.main-nav a:hover {
-  color: #fff;
 }
 
 /* line 20, ../sass/objects/_navegacion.scss */
@@ -722,6 +730,12 @@ table {
   position: absolute;
   bottom: 0;
   left: 40%;
+}
+
+@media only screen and (min-width: 900px) {
+  .main-nav li {
+    width: 14.2%;
+  }
 }
 @media only screen and (max-width: 900px) {
   /* line 26, ../sass/objects/_navegacion.scss */
