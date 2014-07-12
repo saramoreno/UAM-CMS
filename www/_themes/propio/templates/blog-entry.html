@@ -13,14 +13,31 @@
 					 {{ content }}
 					</div>
 				</div>
-				<form action="#" class="main-form">
+
+		    <div id="disqus_thread"></div>
+		    <script type="text/javascript">
+		        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		        var disqus_shortname = 'historiacontempornea'; // required: replace example with your forum shortname
+
+		        /* * * DON'T EDIT BELOW THIS LINE * * */
+		        (function() {
+		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		        })();
+		    </script>
+		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+				
+			<!-- 	<form action="#" class="main-form">
 					<h1>Deja un comentario</h1>
 					<input type="text" placeholder="Nombre">
 					<input type="text" placeholder="Correo electrónico">
 					<input type="text" placeholder="Web (opcional)">
 					<textarea name="comment" id="" cols="30" rows="10" placeholder="Comentario"></textarea>
 					<button class="button" type="submit" value="submit">Publica tu comentario</button>
-				</form>
+				</form> -->
 		</div><!--end of inner-wrappwer-->
 	</div><!--end of wrapper-->
 </div>
