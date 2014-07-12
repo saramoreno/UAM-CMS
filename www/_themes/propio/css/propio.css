@@ -685,8 +685,7 @@ table {
 \*------------------------------------------*/
 /* line 5, ../sass/objects/_navegacion.scss */
 .main-nav {
-  background: #333;
-  height: 56px;
+  background: #354144;
 }
 
 .main-nav li {
@@ -694,32 +693,40 @@ table {
   vertical-align: middle;
   text-align: center;
   position: relative;
-  height: 100%;
+  width: 14.28%;
 }
 
-.main-nav li:hover {
-  background: #4d4d4d;
+.main-nav a:hover {
+  color: #fff;
 }
 /* line 11, ../sass/objects/_navegacion.scss */
 .main-nav a {
   padding: 15px;
-  height: 100%;
-  display: block;
-  color: #fff;
+  display: inline-block;
+  color: #6c868c;
   text-transform: uppercase;
   font-size: 12px;
-  font-family: "Open Sans", "Helvetica Neue", Arial;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.main-nav a span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+.main-nav a:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 25px;
 }
 
 /* line 20, ../sass/objects/_navegacion.scss */
 .main-nav .on {
   font-weight: 700;
   color: #fff;
-}
-
-.main-nav a.on:before, .main-nav a.on:after {
-  content: "";
-  display: block;
 }
 
 .main-nav a.on:after {
@@ -729,25 +736,31 @@ table {
   border-bottom-color: #fff;
   position: absolute;
   bottom: 0;
-  left: 40%;
+  left: 45%;
+  content:"";
+  display: block;
 }
 
 @media only screen and (min-width: 900px) {
-  .main-nav li {
-    width: 14.2%;
-  }
+/*  .main-nav li {
+    width: 14.28%;
+  }*/
 }
-@media only screen and (max-width: 900px) {
-  /* line 26, ../sass/objects/_navegacion.scss */
+
+@media only screen and (max-width: 1072) {
   .main-nav a {
-    padding: 10px;
+    padding: 12px 20px;
   }
 }
 
-@media only screen and (max-width: 900px) {
-    .main-nav a.on:after {
+
+@media only screen and (max-width: 1120px) {
+    /* .main-nav a {
+      padding: 12px 25px;
+    }*/
+    /*.main-nav a.on:after {
       display: none;
-    }
+    }*/
   }
 
 /*------------------------------------------*\
