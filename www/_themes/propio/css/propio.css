@@ -686,6 +686,7 @@ table {
 /* line 5, ../sass/objects/_navegacion.scss */
 .main-nav {
   background: #354144;
+  border: 1px solid #262626;
 }
 
 .main-nav li {
@@ -696,12 +697,16 @@ table {
   width: 14.28%;
 }
 
+.main-nav li:hover {
+  background: #65666b;
+}
+
 .main-nav a:hover {
   color: #fff;
 }
 /* line 11, ../sass/objects/_navegacion.scss */
 .main-nav a {
-  padding: 15px;
+  padding: 15px 0;
   display: inline-block;
   color: #6c868c;
   text-transform: uppercase;
@@ -735,33 +740,46 @@ table {
   border: 6px solid transparent;
   border-bottom-color: #fff;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 45%;
   content:"";
   display: block;
 }
 
-@media only screen and (min-width: 900px) {
-/*  .main-nav li {
-    width: 14.28%;
-  }*/
-}
-
-@media only screen and (max-width: 1072) {
+@media only screen and (max-width: 860px) {
+  .hero {
+    position: relative;
+  }
+  .main-nav {
+    width: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .main-nav li {
+   display: block;
+   width: 100%;
+   text-align: left;
+   border-bottom: 1px solid #262626;
+  }
+  .main-nav li:hover, .main-nav li:active {
+    background: #65666b;
+  }
   .main-nav a {
-    padding: 12px 20px;
+    padding: 7px 50px 8px 15px;
+  }
+  .main-nav a.on:after {
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left-color: #fff;
+    position: absolute;
+    left: -1px;
+    top: 35%;
+    content:"";
+    display: block;
   }
 }
-
-
-@media only screen and (max-width: 1120px) {
-    /* .main-nav a {
-      padding: 12px 25px;
-    }*/
-    /*.main-nav a.on:after {
-      display: none;
-    }*/
-  }
 
 /*------------------------------------------*\
     Header
