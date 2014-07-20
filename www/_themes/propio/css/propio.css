@@ -420,7 +420,7 @@ h4, .delta {
 /* line 41, ../sass/base/_headings.scss */
 .bold-heading {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 35px;
   margin: 0 0 .5em 0;
 }
 @media only screen and (max-width: 49.92857em) {
@@ -711,7 +711,7 @@ table {
   color: #6c868c;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   vertical-align: middle;
 }
 
@@ -784,6 +784,20 @@ table {
 /*------------------------------------------*\
     Header
 \*------------------------------------------*/
+/*header .top-header {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255,  0.2);
+  border-top: 1px solid rgba(0, 0, 0,  0.5);
+  background-color: transparent;*/
+
+.hero figure {
+  width: 100%;
+  height: 289px;
+}
+.hero img {
+  width: 100%;
+  height: 289px;
+}
+
 /* line 6, ../sass/objects/_header.scss */
 header .title {
   margin-bottom: 2em;
@@ -885,7 +899,6 @@ header .main-form {
     width: 100%;
   }
 }
-
 /* line 63, ../sass/objects/_post-box.scss */
 .more {
   display: block;
@@ -928,6 +941,10 @@ header .main-form {
 .post-entry p {
   margin-bottom: 1em;
 }
+.post-entry .post-text {
+   margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 49.92857em) {
   /* line 99, ../sass/objects/_post-box.scss */
   .post-entry figure.left, .post-entry figure.right {
@@ -947,7 +964,8 @@ footer {
 }
 /* line 7, ../sass/objects/_footer.scss */
 footer .wrapper {
-  background: #333;
+  background: #354144;
+  border: 1px solid #262626;
   padding-top: 0;
 }
 /* line 10, ../sass/objects/_footer.scss */
@@ -969,7 +987,7 @@ footer p {
 }
 /* line 23, ../sass/objects/_footer.scss */
 .social-icons a {
-  color: #ccc;
+  color: #6c868c;
   font-size: 20px;
   font-size: 1.42857rem;
   width: 50px;
@@ -982,7 +1000,8 @@ footer p {
 }
 /* line 31, ../sass/objects/_footer.scss */
 .social-icons a:hover {
-  background: #4d4d4d;
+  background: #65666b;
+  color: #fff;
 }
 
 /*------------------------------------------*\
