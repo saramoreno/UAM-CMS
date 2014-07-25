@@ -796,6 +796,7 @@ table {
 .hero img {
   width: 100%;
   height: 289px;
+  max-height: 282px;
 }
 
 /* line 6, ../sass/objects/_header.scss */
@@ -1031,54 +1032,41 @@ footer p {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-user:before {
-  content: "\f007";
-}
-.icon-book:before {
-  content: "\f02d";
-}
-.icon-print:before {
-  content: "\f02f";
-}
-.icon-edit:before {
-  content: "\f044";
-}
-.icon-twitter:before {
-  content: "\f099";
-}
-.icon-facebook:before {
-  content: "\f09a";
-}
-.icon-group:before {
-  content: "\f0c0";
-}
-.icon-google-plus:before {
-  content: "\f0d5";
-}
-.icon-chevron-circle-right:before {
-  content: "\f138";
-}
+
 .icon-long-arrow-left:before {
-  content: "\f177";
+  content: "\e608";
+}
+.icon-prev:before {
+  content: "\e609";
+}
+.icon-prev2:before {
+  content: "\e60a";
 }
 .icon-long-arrow-right:before {
-  content: "\f178";
+  content: "\e605";
 }
-.icon-institution:before {
-  content: "\f19c";
+.icon-next:before {
+  content: "\e606";
 }
-.icon-bullhorn:before {
-  content: "\e602";
-}
-.icon-books:before {
-  content: "\e603";
-}
-.icon-new:before {
-  content: "\e601";
+.icon-next2:before {
+  content: "\e607";
 }
 .icon-arrow-right:before {
+  content: "\e604";
+}
+.icon-arrow-left:before {
+  content: "\e603";
+}
+.icon-googleplus:before {
   content: "\e600";
 }
+.icon-facebook:before {
+  content: "\e601";
+}
+.icon-twitter:before {
+  content: "\e602";
+}
+
 /*------------------------------------------*\
     ASIDE
 \*------------------------------------------*/
@@ -1158,10 +1146,27 @@ aside .sidebar-list li {
 }
 
 .pagination a {
-  background: #ccc;
   padding: .5em;
-  margin: .2em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.pagination .pag-list {
+  display: inline-block;
+  border: 1px solid #f1f1f1;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
+.pag-list li {
+  display: inline-block;
+  border-right: 1px solid #f1f1f1;
+  padding: 8px;
+}
+
+.pag-list li:hover {
+  background: #f1f1f1;
+}
+

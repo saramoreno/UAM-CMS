@@ -1,6 +1,6 @@
 ---
 title: Novedades
-_template: blog
-_fieldset: general
+_template: publications
+_fieldset: news
 ---
 Esto es un mensaje de prueba sobre las novedades

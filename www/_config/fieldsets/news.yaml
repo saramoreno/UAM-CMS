@@ -1,0 +1,19 @@
+
+fields: 
+  slug:
+    hide: true
+    type: hidden
+  title:
+    hide: true
+    type: hidden
+  image: 
+    display: Imagen
+    type: file
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img/blog
+  content:
+    type: redactor
+    display: Page Content
+    required: false
+    default:
+    type: markitup
