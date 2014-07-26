@@ -1,6 +1,6 @@
 ---
 title: Novedades
-_template: publications
+_template: news
 _fieldset: news
+author: admin
 ---
-Esto es un mensaje de prueba sobre las novedades

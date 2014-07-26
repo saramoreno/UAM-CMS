@@ -835,22 +835,22 @@ header .main-form {
     Post-box
 \*------------------------------------------*/
 /* line 5, ../sass/objects/_post-box.scss */
-.post-box {
+.post-box, .new-box {
   border-bottom: 1px solid #e7e9ec;
   padding: .5em 1em 1em 0;
   margin-bottom: 2em;
   overflow: hidden;
 }
 /* line 10, ../sass/objects/_post-box.scss */
-.post-box .post-title {
+.post-box .post-title, .new-box .new-title {
   margin-bottom: 2em;
 }
 /* line 12, ../sass/objects/_post-box.scss */
-.post-box .post-title a h2 {
+.post-box .post-title a h2, .new-title h2 {
   color: #333;
 }
 /* line 15, ../sass/objects/_post-box.scss */
-.post-box .post-title a h2:hover {
+.post-box .post-title a h2:hover, .new-title h2:hover{
   color: #1982d1;
 }
 /* line 21, ../sass/objects/_post-box.scss */
@@ -955,6 +955,14 @@ header .main-form {
     min-width: 250px;
   }
 }
+.new-box {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.new-box p {
+  margin-top: 1em;
+}
+
 
 /*------------------------------------------*\
     FOOTER

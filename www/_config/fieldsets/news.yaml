@@ -1,19 +1,22 @@
-
-fields: 
+fields:
   slug:
     hide: true
     type: hidden
-  title:
+  title: 
     hide: true
-    type: hidden
-  image: 
-    display: Imagen
-    type: file
-    allowed: [png, gif, jpg, jpeg]
-    destination: assets/img/blog
   content:
     type: redactor
-    display: Page Content
-    required: false
-    default:
-    type: markitup
+    display: Contenido
+    image_dir: assets/img/blog
+    resize:
+      width: 500
+      height: 300
+      quality: 60
+      upsize: false
+  author:
+    display: Autor
+    type: users
+    required: true
+    hide: true
+
+hide: true
