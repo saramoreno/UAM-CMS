@@ -529,10 +529,10 @@ h4, .delta {
 }
 @media only screen and (min-width: 50em) {
   /* line 66, ../sass/base/_layout.scss */
-  .gi {
+  /*.gi {
     display: inline-block;
     vertical-align: top;
-  }
+  }*/
 }
 
 /* line 77, ../sass/base/_layout.scss */
@@ -834,6 +834,18 @@ header .main-form {
 /*------------------------------------------*\
     Post-box
 \*------------------------------------------*/
+
+.main-blog {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 950px) {
+  .main-blog {
+    width: 100%;
+  }
+}
+
 /* line 5, ../sass/objects/_post-box.scss */
 .post-box, .new-box {
   border-bottom: 1px solid #e7e9ec;
@@ -894,6 +906,7 @@ header .main-form {
   .post-box figure {
     display: block;
     margin: 1em auto;
+    float: none;
   }
   /* line 57, ../sass/objects/_post-box.scss */
   .post-box .post-text {
@@ -914,6 +927,9 @@ header .main-form {
 }
 
 /* line 76, ../sass/objects/_post-box.scss */
+.post-entry {
+  margin-top: 1.5em;
+}
 .post-entry figure {
   width: 35%;
   height: 300px;
@@ -961,6 +977,10 @@ header .main-form {
 
 .new-box p {
   margin-top: 1em;
+}
+
+h1.entry {
+  margin-bottom: 0;
 }
 
 
@@ -1082,6 +1102,7 @@ footer p {
 aside {
   padding-left: 2em;
   vertical-align: top;
+  display: inline-block;
 }
 /* line 8, ../sass/objects/_aside.scss */
 aside p {
@@ -1110,7 +1131,7 @@ aside .sidebar-list li {
   list-style-type: square;
   margin-left: 1.5em;
 }
-@media only screen and (max-width: 49.92857em) {
+@media only screen and (max-width: 950px) {
   /* line 5, ../sass/objects/_aside.scss */
   aside {
     width: 100%;
@@ -1155,26 +1176,32 @@ aside .sidebar-list li {
 
 .pagination a {
   padding: .5em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #f1f1f1;
+  padding: 8px;
 }
 
 .pagination .pag-list {
   display: inline-block;
-  border: 1px solid #f1f1f1;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 
-.pag-list li {
-  display: inline-block;
-  border-right: 1px solid #f1f1f1;
-  padding: 8px;
-}
-
-.pag-list li:hover {
+.pag-list a:hover {
   background: #f1f1f1;
+}
+
+.pagination .icon-prev2, .pagination .icon-next2 {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.pagination .text {
+  vertical-align: middle;
+}
+
+.pagination.entry {
+  margin-top: 2em;
 }
 

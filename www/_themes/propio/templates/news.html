@@ -28,25 +28,20 @@
           </div>
           {{ /entries:listing }}
         </article>
-        <div class="pagination">
-          <ul class="pag-list">
-            <li>
-              <a href="#">
-                <span class="icon-prev2"></span>
-              </a>
-            </li><li>
-              <a href="#">1</a>
-            </li><li>
-              <a href="#">2</a>
-            </li><li>
-              <a href="#">3</a>
-            </li><li>
-              <a href="#">
-                <span class="icon-next2"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        {{ entries:pagination folder="novedades" limit="6" }}
+        {{ if next_page || previous_page }}
+          <div class="pagination">
+            <div class="pag-list">
+              {{ if next_page}}
+                <a href="{{ next_page }}" class="older"><span class="icon-prev2"></span><span class="text">Más antiguos</span></a>
+              {{ endif }}
+              {{ if previous_page }}
+                <a href="{{ previous_page }}" class="newer">Más nuevos<span class="icon-next2"></span></a>
+              {{ endif }}
+            </div>
+          </div>
+        {{ endif }}
+      {{ /entries:pagination }}
 		  </div>
 	 </div>
 </div>
