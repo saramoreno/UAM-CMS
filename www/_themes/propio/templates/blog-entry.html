@@ -1,7 +1,10 @@
 <div class="main-content">
 	<div class="wrapper">
 		<div class="big-inner-wrapper">
-			<h1 class="bold-heading">{{ title }}</h1>
+			<h1 class="bold-heading entry">{{ title }}</h1>
+			{{ member:profile username=author }}
+        <span class="small">Posted on <a href="{{ date }}">{{ date }}</a> by <a href="#"> {{ first_name }} {{ last_name}} </a></span>
+      {{ member }}
 				<div class="post-entry">
             {{ if image }}
               <figure class="left" style="background: url({{ image }}); background-size: cover"></figure>
@@ -28,14 +31,21 @@
 		    </script>
 		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 		    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-			<!-- 	<form action="#" class="main-form">
-					<h1>Deja un comentario</h1>
-					<input type="text" placeholder="Nombre">
-					<input type="text" placeholder="Correo electrónico">
-					<input type="text" placeholder="Web (opcional)">
-					<textarea name="comment" id="" cols="30" rows="10" placeholder="Comentario"></textarea>
-					<button class="button" type="submit" value="submit">Publica tu comentario</button>
-				</form> -->
+
+		    <!-- {{ entries:pagination folder="blog | blog-entry " limit="1" }}
+        	{{ if next_page || previous_page }}
+	          <div class="pagination entry">
+	            <div class="pag-list">
+	              {{ if next_page}}
+	                <a href="{{ next_page }}" class="older"><span class="icon-prev2"></span><span class="text">Posts antiguos</span></a>
+	              {{ endif }}
+	              {{ if previous_page }}
+	                <a href="{{ previous_page }}" class="newer">Posts nuevos<span class="icon-next2"></span></a>
+	              {{ endif }}
+	            </div>
+	          </div>
+	        {{ endif }}
+	      {{ /entries:pagination }} -->
 		</div><!--end of inner-wrappwer-->
 	</div><!--end of wrapper-->
 </div>

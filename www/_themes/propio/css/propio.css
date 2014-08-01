@@ -529,10 +529,10 @@ h4, .delta {
 }
 @media only screen and (min-width: 50em) {
   /* line 66, ../sass/base/_layout.scss */
-  .gi {
+  /*.gi {
     display: inline-block;
     vertical-align: top;
-  }
+  }*/
 }
 
 /* line 77, ../sass/base/_layout.scss */
@@ -796,6 +796,7 @@ table {
 .hero img {
   width: 100%;
   height: 289px;
+  max-height: 282px;
 }
 
 /* line 6, ../sass/objects/_header.scss */
@@ -833,23 +834,35 @@ header .main-form {
 /*------------------------------------------*\
     Post-box
 \*------------------------------------------*/
+
+.main-blog {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 950px) {
+  .main-blog {
+    width: 100%;
+  }
+}
+
 /* line 5, ../sass/objects/_post-box.scss */
-.post-box {
+.post-box, .new-box {
   border-bottom: 1px solid #e7e9ec;
   padding: .5em 1em 1em 0;
   margin-bottom: 2em;
   overflow: hidden;
 }
 /* line 10, ../sass/objects/_post-box.scss */
-.post-box .post-title {
+.post-box .post-title, .new-box .new-title {
   margin-bottom: 2em;
 }
 /* line 12, ../sass/objects/_post-box.scss */
-.post-box .post-title a h2 {
+.post-box .post-title a h2, .new-title h2 {
   color: #333;
 }
 /* line 15, ../sass/objects/_post-box.scss */
-.post-box .post-title a h2:hover {
+.post-box .post-title a h2:hover, .new-title h2:hover{
   color: #1982d1;
 }
 /* line 21, ../sass/objects/_post-box.scss */
@@ -879,7 +892,7 @@ header .main-form {
 /* line 39, ../sass/objects/_post-box.scss */
 .post-box .post-text {
   display: inline-block;
-  width: 55%;
+  width: 64%;
   padding-left: 1em;
 }
 /* line 43, ../sass/objects/_post-box.scss */
@@ -893,6 +906,7 @@ header .main-form {
   .post-box figure {
     display: block;
     margin: 1em auto;
+    float: none;
   }
   /* line 57, ../sass/objects/_post-box.scss */
   .post-box .post-text {
@@ -913,6 +927,9 @@ header .main-form {
 }
 
 /* line 76, ../sass/objects/_post-box.scss */
+.post-entry {
+  margin-top: 1.5em;
+}
 .post-entry figure {
   width: 35%;
   height: 300px;
@@ -954,6 +971,18 @@ header .main-form {
     min-width: 250px;
   }
 }
+.new-box {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.new-box p {
+  margin-top: 1em;
+}
+
+h1.entry {
+  margin-bottom: 0;
+}
+
 
 /*------------------------------------------*\
     FOOTER
@@ -1031,54 +1060,41 @@ footer p {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-user:before {
-  content: "\f007";
-}
-.icon-book:before {
-  content: "\f02d";
-}
-.icon-print:before {
-  content: "\f02f";
-}
-.icon-edit:before {
-  content: "\f044";
-}
-.icon-twitter:before {
-  content: "\f099";
-}
-.icon-facebook:before {
-  content: "\f09a";
-}
-.icon-group:before {
-  content: "\f0c0";
-}
-.icon-google-plus:before {
-  content: "\f0d5";
-}
-.icon-chevron-circle-right:before {
-  content: "\f138";
-}
+
 .icon-long-arrow-left:before {
-  content: "\f177";
+  content: "\e608";
+}
+.icon-prev:before {
+  content: "\e609";
+}
+.icon-prev2:before {
+  content: "\e60a";
 }
 .icon-long-arrow-right:before {
-  content: "\f178";
+  content: "\e605";
 }
-.icon-institution:before {
-  content: "\f19c";
+.icon-next:before {
+  content: "\e606";
 }
-.icon-bullhorn:before {
-  content: "\e602";
-}
-.icon-books:before {
-  content: "\e603";
-}
-.icon-new:before {
-  content: "\e601";
+.icon-next2:before {
+  content: "\e607";
 }
 .icon-arrow-right:before {
+  content: "\e604";
+}
+.icon-arrow-left:before {
+  content: "\e603";
+}
+.icon-googleplus:before {
   content: "\e600";
 }
+.icon-facebook:before {
+  content: "\e601";
+}
+.icon-twitter:before {
+  content: "\e602";
+}
+
 /*------------------------------------------*\
     ASIDE
 \*------------------------------------------*/
@@ -1086,6 +1102,7 @@ footer p {
 aside {
   padding-left: 2em;
   vertical-align: top;
+  display: inline-block;
 }
 /* line 8, ../sass/objects/_aside.scss */
 aside p {
@@ -1114,7 +1131,7 @@ aside .sidebar-list li {
   list-style-type: square;
   margin-left: 1.5em;
 }
-@media only screen and (max-width: 49.92857em) {
+@media only screen and (max-width: 950px) {
   /* line 5, ../sass/objects/_aside.scss */
   aside {
     width: 100%;
@@ -1148,3 +1165,43 @@ aside .sidebar-list li {
     display: block;
   }
 }
+
+/*------------------------------------------*\
+    PAGINATION
+\*------------------------------------------*/
+
+.pagination {
+  text-align: center;
+}
+
+.pagination a {
+  padding: .5em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #f1f1f1;
+  padding: 8px;
+}
+
+.pagination .pag-list {
+  display: inline-block;
+}
+
+.pag-list a:hover {
+  background: #f1f1f1;
+}
+
+.pagination .icon-prev2, .pagination .icon-next2 {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.pagination .text {
+  vertical-align: middle;
+}
+
+.pagination.entry {
+  margin-top: 2em;
+}
+
