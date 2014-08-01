@@ -1,0 +1,41 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="assets/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 9, ../sass/ie.scss */
+
+aside {
+	float: right;
+	width:  30%;
+}
+
+.main-blog {
+	width: 70%;
+	float: left;
+}
+
+.pagination {
+	clear: both;
+}
+
+/*.main-nav {
+	width: 1000px;
+}*/
+
+.main-nav li {
+	min-width: 100px;
+}
+
+.post-box h2, .new-title h2 {
+	margin-bottom: 3px;
+}
+
+.sidebar-list li {
+	padding-bottom: 10px;
+}
+
+.icon-long-arrow-right {
+	background: url("../img/arrow-right.png") no-repeat center right;
+	color: #fff;
+}

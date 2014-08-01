@@ -922,8 +922,9 @@ header .main-form {
 .more .icon {
   padding-left: .3em;
   position: relative;
-  top: .15em;
+  top: 5px;
   left: 0;
+  font-size: 20px;
 }
 
 /* line 76, ../sass/objects/_post-box.scss */
