@@ -10,6 +10,10 @@ aside {
 	width:  30%;
 }
 
+aside p {
+	color: #65666b;
+}
+
 .main-blog {
 	width: 70%;
 	float: left;
@@ -33,9 +37,29 @@ aside {
 
 .sidebar-list li {
 	padding-bottom: 10px;
+	list-style-type: disc;
+	color: #65666b;
+}
+
+.sidebar-title {
+	color: #65666b;
 }
 
 .icon-long-arrow-right {
-	background: url("../img/arrow-right.png") no-repeat center right;
+	background: url("../img/arrow-right.png") no-repeat top right;
+	color: transparent;
 	color: #fff;
+	font-weight: 300;
+}
+
+footer .icon {
+	display: none;
+}
+
+span.small {
+	color: #65666b;
+}
+
+.icon-prev2 {
+	display: none;
 }

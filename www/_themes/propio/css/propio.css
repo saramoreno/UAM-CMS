@@ -72,42 +72,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 \*------------------------------------*/
 
 @font-face {
-  font-family: "Open-Sans";
-  src: url("../fonts/OpenSans-Bold.otf");
+  font-family: "Locator";
+  src: url("../fonts/locator-regular-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/OpenSans-Bold.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#Open-Sans") format("svg");
+  src: url("../fonts/locator-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/locator-regular-webfont.woff") format("woff"), url("../fonts/locator-regular-webfont.ttf") format("truetype"), url("../fonts/locator-regular-webfont.svg#Locator") format("svg");
   /* Legacy iOS */
-  font-weight: 700;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
 }
+
 @font-face {
-  font-family: "Open-Sans";
-  src: url("../fonts/OpenSans-Light.otf");
+  font-family: "Locator";
+  src: url("../fonts/locator-medium-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/OpenSans-Light.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans-Light.svg#Open-Sans") format("svg");
+  src: url("../fonts/locator-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/locator-medium-webfont.woff") format("woff"), url("../fonts/locator-medium-webfont.ttf") format("truetype"), url("../fonts/locator-medium-webfont.svg#Locator") format("svg");
+  /* Legacy iOS */
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Locator";
+  src: url("../fonts/locator-bold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/locator-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/locator-bold-webfont.woff") format("woff"), url("../fonts/locator-bold-webfont.ttf") format("truetype"), url("../fonts/locator-bold-webfont.svg#Locator") format("svg");
+  /* Legacy iOS */
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Locator";
+  src: url("../fonts/locator-regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/locator-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/locator-regular-webfont.woff") format("woff"), url("../fonts/locator-regular-webfont.ttf") format("truetype"), url("../fonts/locator-regular-webfont.svg#Locator") format("svg");
   /* Legacy iOS */
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: "Open-Sans";
-  src: url("../fonts/OpenSans-Bold.otf");
-  /* IE9 Compat Modes */
-  src: url("../fonts/OpenSans-Bold.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#Open-Sans") format("svg");
-  /* Legacy iOS */
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: "Open-Sans";
-  src: url("../fonts/OpenSans-Regular.otf");
-  /* IE9 Compat Modes */
-  src: url("../fonts/OpenSans-Regular.otf?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.svg#Open-Sans") format("svg");
-  /* Legacy iOS */
-  font-weight: 400;
   font-style: normal;
   font-stretch: normal;
 }
@@ -123,10 +126,11 @@ html {
 body {
   background: #f5f6f7;
   color: #65666b;
-  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
+  font-family: "Locator", Arial, Helvetica, sans-serif;
   font-size: 100%;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
 
@@ -147,6 +151,11 @@ h1, h2, h2, h3, h4, h6 {
 /* line 41, ../sass/base/_base.scss */
 p {
   line-height: 1.8;
+  font-size: 15px;
+}
+
+span, li {
+  font-size: 15px;
 }
 
 /* line 45, ../sass/base/_base.scss */
@@ -711,14 +720,15 @@ table {
   color: #6c868c;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 700;
   vertical-align: middle;
+  font-weight: bold;
 }
 
 .main-nav a span {
   display: inline-block;
   vertical-align: middle;
   line-height: 100%;
+  font-size: 12px;
 }
 
 .main-nav a:before {
@@ -730,8 +740,8 @@ table {
 
 /* line 20, ../sass/objects/_navegacion.scss */
 .main-nav .on {
-  font-weight: 700;
   color: #fff;
+  font-weight: bold;
 }
 
 .main-nav a.on:after {
@@ -801,11 +811,10 @@ table {
 
 /* line 6, ../sass/objects/_header.scss */
 header .title {
-  margin-bottom: 2em;
-  padding-right: 1em;
   width: 70%;
   display: inline-block;
   vertical-align: top;
+  padding: 0 10px 20px 10px;
 }
 /* line 13, ../sass/objects/_header.scss */
 header .title a {
@@ -820,6 +829,14 @@ header .main-form {
   width: 30%;
   display: inline-block;
   vertical-align: top;
+}
+
+header .bold-heading {
+  margin-bottom: 0;
+}
+
+header .subtitle {
+  line-height: 1.5em;
 }
 @media only screen and (max-width: 49.92857em) {
   /* line 29, ../sass/objects/_header.scss */
@@ -900,6 +917,7 @@ header .main-form {
   max-height: 270px;
   overflow: hidden;
   line-height: 1.5em;
+  font-size: 15px;
 }
 @media only screen and (max-width: 49.92857em) {
   /* line 51, ../sass/objects/_post-box.scss */
@@ -1104,6 +1122,7 @@ aside {
   padding-left: 2em;
   vertical-align: top;
   display: inline-block;
+  margin-bottom: 20px;
 }
 /* line 8, ../sass/objects/_aside.scss */
 aside p {
@@ -1148,6 +1167,7 @@ aside .sidebar-list li {
   padding: .8em 0;
   list-style-type: square;
   margin-left: 1em;
+  font-size: 15px;
 }
 /* line 11, ../sass/objects/_main-list.scss */
 .main-list li p {
