@@ -10,7 +10,7 @@
               <h2>{{ title }}</h2>
             </a>
             {{ member:profile username=author }}
-              <span class="small">Posted on <a href="{{ date }}">{{ date }}</a> by <a href="#"> {{ first_name }} {{ last_name}} </a></span>
+              <span class="small">Publicado el <span class="entry-date">{{ date }}</span> por <a href="{{ taxonomy_name }}"> {{ first_name }} {{ last_name}} </a></span>
             {{ member }}
           </div>
           {{ if image }}

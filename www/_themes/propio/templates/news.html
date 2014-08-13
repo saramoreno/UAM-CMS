@@ -1,6 +1,6 @@
 
 <div class="main-content">
-	<div class="inner-wrapper">
+	<div class="big-inner-wrapper">
 		<h1 class="big-heading">{{ title }}</h1>
 		<article>
       {{ entries:listing folder="novedades" limit="6" sort_dir="desc" paginate="true" }}
@@ -10,7 +10,7 @@
               <h2>{{ title }}</h2>
             </a>
             {{ member:profile username=author }}
-              <span class="small">Publicado el <a href="{{ date }}">{{ date }}</a> por <a href="#"> {{ first_name }} {{ last_name}} </a></span>
+              <span class="small">Publicado el <span class="entry-date">{{ date }}</span> por <a href="#"> {{ first_name }} {{ last_name}} </a></span>
             {{ member }}
           </div>
           <!-- {{ if image }}
