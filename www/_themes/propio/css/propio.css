@@ -114,6 +114,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: normal;
   font-stretch: normal;
 }
+
+@font-face {
+  font-family: "ArmWrestler";
+  src: url("../fonts/ArmWrestler-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/ArmWrestler-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ArmWrestler-webfont.woff") format("woff"), url("../fonts/ArmWrestler-webfont.ttf") format("truetype"), url("../fonts/ArmWrestler-webfont.svg#ArmWrestler") format("svg");
+  /* Legacy iOS */
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
 /* Tipos */
 /* Global */
 /* line 13, ../sass/base/_base.scss */
@@ -131,6 +142,7 @@ body {
   line-height: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.8px;
 }
 
 body, html, .main {
@@ -174,7 +186,7 @@ span, li {
 /* Inline Content */
 /* line 55, ../sass/base/_base.scss */
 a {
-  color: #1982d1;
+  color: #2E9286;
   text-decoration: none;
 }
 /* line 59, ../sass/base/_base.scss */
@@ -187,7 +199,7 @@ a:focus {
 }
 /* line 66, ../sass/base/_base.scss */
 a:hover {
-  color: #333;
+  text-decoration: underline;
 }
 
 /* line 71, ../sass/base/_base.scss */
@@ -408,6 +420,7 @@ h1, .alpha {
 h2, .beta {
   font-size: 24px;
   font-size: 1.71429rem;
+  font-family: "ArmWrestler";
 }
 
 /* line 12, ../sass/base/_headings.scss */
@@ -434,6 +447,12 @@ h4, .delta {
   font-weight: 700;
   font-size: 35px;
   margin: 0 0 .5em 0;
+  font-family: "ArmWrestler";
+}
+
+.bold-heading a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 @media only screen and (max-width: 49.92857em) {
   /* line 41, ../sass/base/_headings.scss */
@@ -485,7 +504,7 @@ h4, .delta {
 
 /* line 21, ../sass/base/_layout.scss */
 .big-inner-wrapper {
-  padding: 2em 8em 6em 8em;
+  padding: 4em 8em 6em 8em;
 }
 @media only screen and (max-width: 49.92857em) {
   /* line 21, ../sass/base/_layout.scss */
@@ -702,7 +721,7 @@ table {
 /* line 5, ../sass/objects/_navegacion.scss */
 .main-nav {
   background: #354144;
-  border: 1px solid #262626;
+  border: 1px solid #797576;
 }
 
 .main-nav li {
@@ -777,7 +796,7 @@ table {
    display: block;
    width: 100%;
    text-align: left;
-   border-bottom: 1px solid #262626;
+   border-bottom: 1px solid #797576;
   }
   .main-nav li:hover, .main-nav li:active {
     background: #65666b;
@@ -827,17 +846,14 @@ header .title {
 header .title a {
   color: #333;
 }
-/* line 16, ../sass/objects/_header.scss */
-header .title a:hover {
-  color: #1982d1;
-}
+
 /* line 22, ../sass/objects/_header.scss */
-header .main-form {
+/*header .main-form {
   width: 30%;
   display: inline-block;
   vertical-align: top;
 }
-
+*/
 header .bold-heading {
   margin-bottom: 0;
 }
@@ -885,9 +901,13 @@ header .subtitle {
 .post-box .post-title a h2, .new-title h2 {
   color: #333;
 }
-/* line 15, ../sass/objects/_post-box.scss */
-.post-box .post-title a h2:hover, .new-title h2:hover{
-  color: #1982d1;
+
+.new-title a:hover {
+  text-decoration: none;
+}
+
+.post-title a {
+  text-decoration: none;
 }
 /* line 21, ../sass/objects/_post-box.scss */
 .post-box figure {
@@ -909,8 +929,12 @@ header .subtitle {
   min-width: 100%;
 }
 /* line 35, ../sass/objects/_post-box.scss */
-.post-box .small {
-  font-size: 15px;
+.post-box .small, .new-box .small {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.entry-date {
+  font-size: 12px;
 }
 /* line 39, ../sass/objects/_post-box.scss */
 .post-box .post-text {
@@ -939,7 +963,7 @@ header .subtitle {
 }
 /* line 63, ../sass/objects/_post-box.scss */
 .more {
-  display: block;
+  display: inline-block;
   margin: 1em 0;
 }
 /* line 67, ../sass/objects/_post-box.scss */
@@ -960,6 +984,7 @@ header .subtitle {
   height: 300px;
   overflow: hidden;
   -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   border-radius: 2px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
@@ -1058,6 +1083,7 @@ footer p {
 .social-icons a:hover {
   background: #65666b;
   color: #fff;
+  text-decoration: none;
 }
 
 /*------------------------------------------*\
@@ -1156,8 +1182,11 @@ aside li.on a {
 }
 /* line 20, ../sass/objects/_aside.scss */
 aside .sidebar-list li {
-  list-style-type: square;
-  margin-left: 1.5em;
+/*  list-style-type: square;*/
+ /* margin-left: 1.5em;*/
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 950px) {
   /* line 5, ../sass/objects/_aside.scss */
@@ -1240,3 +1269,12 @@ aside .sidebar-list li {
   height: auto;
 }
 
+.older, .older:hover, .more, .more:hover {
+  text-decoration: none;
+}
+
+.result {
+  color: #ccc;
+  margin-left: 2px;
+  letter-spacing: 0.8px;
+}

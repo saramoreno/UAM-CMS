@@ -1,5 +1,5 @@
-fields: 
-	title: 
+fields:
+	title:
 		instructions: Introduce un nombre
 	slug:
 	  hide: true
@@ -12,7 +12,7 @@ fields:
     type: redactor
     display: Breve descripción
 	content:
-    display: Listado de publicaciones 
+    display: Listado de publicaciones
     type: redactor
 
 hide: true

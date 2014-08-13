@@ -15,7 +15,7 @@
   <ul class="sidebar-list">
    {{ taxonomy:listing folder="blog" type="categories"}}
    	 <li {{ if name == taxonomy_name}} class="on"{{ endif }}>
-   	 	<a href="{{ url }}">{{ name }} ({{ results }})</a></li>
+   	 	<a href="{{ url }}">{{ name }} </a><span class="result">({{ results }})</span></li>
   	{{ /taxonomy:listing }}
   </ul>
   <h3 class="sidebar-title">Mes de publicación</h3>

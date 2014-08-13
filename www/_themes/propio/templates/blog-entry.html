@@ -2,7 +2,7 @@
 	<div class="big-inner-wrapper">
 		<h1 class="bold-heading entry">{{ title }}</h1>
 		{{ member:profile username=author }}
-      <span class="small">Posted on <a href="{{ date }}">{{ date }}</a> by <a href="#"> {{ first_name }} {{ last_name}} </a></span>
+      <span class="small">Posted on <span class="entry-date">{{ date }}</span> by <a href="{{ member }}"> {{ first_name }} {{ last_name}} </a></span>
     {{ member }}
 			<div class="post-entry">
           {{ if image }}
