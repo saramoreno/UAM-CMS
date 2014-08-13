@@ -1,34 +1,33 @@
 
 <div class="main-content">
-	<div class="wrapper">
-		<div class="inner-wrapper">
-			<h1 class="big-heading">{{ title }}</h1>
-			<article>
-        {{ entries:listing folder="novedades" limit="6" sort_dir="desc" paginate="true" }}
-          <div class="new-box">
-            <div class="new-title">
-              <a href="{{ url }}">
-                <h2>{{ title }}</h2>
-              </a>
-              {{ member:profile username=author }}
-                <span class="small">Publicado el <a href="{{ date }}">{{ date }}</a> por <a href="#"> {{ first_name }} {{ last_name}} </a></span>
-              {{ member }}
-            </div>
-            <!-- {{ if image }}
-            <figure class="left" style="background: url({{ image }});background-size: cover;"></figure>
-              {{ else }}
-            <figure class="left" style="background: url(/assets/img/woods.jpg);background-size: cover;"></figure>
-              {{ endif }} -->
-            <div class="new-text">
-              <p>
-                {{ content }}
-              </p>
-            <!-- <a class="more" href="{{ url }}">Sigue leyendo<span class="icon icon-long-arrow-right"></a> -->
-            </div>
+	<div class="inner-wrapper">
+		<h1 class="big-heading">{{ title }}</h1>
+		<article>
+      {{ entries:listing folder="novedades" limit="6" sort_dir="desc" paginate="true" }}
+        <div class="new-box">
+          <div class="new-title">
+            <a href="{{ url }}">
+              <h2>{{ title }}</h2>
+            </a>
+            {{ member:profile username=author }}
+              <span class="small">Publicado el <a href="{{ date }}">{{ date }}</a> por <a href="#"> {{ first_name }} {{ last_name}} </a></span>
+            {{ member }}
           </div>
-          {{ /entries:listing }}
-        </article>
-        {{ entries:pagination folder="novedades" limit="6" }}
+          <!-- {{ if image }}
+          <figure class="left" style="background: url({{ image }});background-size: cover;"></figure>
+            {{ else }}
+          <figure class="left" style="background: url(/assets/img/woods.jpg);background-size: cover;"></figure>
+            {{ endif }} -->
+          <div class="new-text">
+            <p>
+              {{ content }}
+            </p>
+          <!-- <a class="more" href="{{ url }}">Sigue leyendo<span class="icon icon-long-arrow-right"></a> -->
+          </div>
+        </div>
+        {{ /entries:listing }}
+      </article>
+      {{ entries:pagination folder="novedades" limit="6" }}
         {{ if next_page || previous_page }}
           <div class="pagination">
             <div class="pag-list">
@@ -42,6 +41,5 @@
           </div>
         {{ endif }}
       {{ /entries:pagination }}
-		  </div>
-	 </div>
+   </div>
 </div>

@@ -1,46 +1,45 @@
 
 <div class="main-content">
-  <div class="wrapper">
-    <div class="inner-wrapper">
-      <div class="gi two-thirds main-blog">
-        <ul>
-        {{ entries:listing folder="blog" limit="6" sort_dir="desc" paginate="true" }}
-          <li class="post-box">
-            <div class="post-title">
-              <a href="{{ url }}">
-                <h2>{{ title }}</h2>
-              </a>
-              {{ member:profile username=author }}
-                <span class="small">Posted on <a href="{{ date }}">{{ date }}</a> by <a href="#"> {{ first_name }} {{ last_name}} </a></span>
-              {{ member }}
-            </div>
-            {{ if image }}
-              <figure class="left" style="background: url({{ image }});background-size: cover;"></figure>
-            {{ else }}
-             <figure class="left" style="background: url(/assets/img/woods.jpg);background-size: cover;"></figure>
-            {{ endif }}
-            <div class="post-text">
-              <p>{{ summary }}</p>
-              <a class="more" href="{{ url }}">Sigue leyendo<span class="icon icon-long-arrow-right"></a>
-            </div>
-          </li>
-         {{ /entries:listing }}
-        </ul>
-      </div>{{ theme:partial src="sidebar" }}
-
-      {{ entries:pagination folder="blog" limit="6" }}
-        {{ if next_page || previous_page }}
-          <div class="pagination">
-            <div class="pag-list">
-              {{ if next_page}}
-                <a href="{{ next_page }}" class="older"><span class="icon-prev2"></span><span class="text">Posts antiguos</span></a>
-              {{ endif }}
-              {{ if previous_page }}
-                <a href="{{ previous_page }}" class="newer">Posts nuevos<span class="icon-next2"></span></a>
-              {{ endif }}
-            </div>
+  <div class="inner-wrapper">
+    <div class="gi two-thirds main-blog">
+      <ul>
+      {{ entries:listing folder="blog" limit="6" sort_dir="desc" paginate="true" }}
+        <li class="post-box">
+          <div class="post-title">
+            <a href="{{ url }}">
+              <h2>{{ title }}</h2>
+            </a>
+            {{ member:profile username=author }}
+              <span class="small">Posted on <a href="{{ date }}">{{ date }}</a> by <a href="#"> {{ first_name }} {{ last_name}} </a></span>
+            {{ member }}
           </div>
-        {{ endif }}
-      {{ /entries:pagination }}
+          {{ if image }}
+            <figure class="left" style="background: url({{ image }});background-size: cover;"></figure>
+          {{ else }}
+           <figure class="left" style="background: url(/assets/img/woods.jpg);background-size: cover;"></figure>
+          {{ endif }}
+          <div class="post-text">
+            <p>{{ summary }}</p>
+            <a class="more" href="{{ url }}">Sigue leyendo<span class="icon icon-long-arrow-right"></a>
+          </div>
+        </li>
+       {{ /entries:listing }}
+      </ul>
+    </div>{{ theme:partial src="sidebar" }}
+
+    {{ entries:pagination folder="blog" limit="6" }}
+      {{ if next_page || previous_page }}
+        <div class="pagination">
+          <div class="pag-list">
+            {{ if next_page}}
+              <a href="{{ next_page }}" class="older"><span class="icon-prev2"></span><span class="text">Posts antiguos</span></a>
+            {{ endif }}
+            {{ if previous_page }}
+              <a href="{{ previous_page }}" class="newer">Posts nuevos<span class="icon-next2"></span></a>
+            {{ endif }}
+          </div>
+        </div>
+      {{ endif }}
+    {{ /entries:pagination }}
   </div>
 </div>

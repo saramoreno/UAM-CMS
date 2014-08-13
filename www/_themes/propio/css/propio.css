@@ -131,6 +131,9 @@ body {
   line-height: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body, html, .main {
   height: 100%;
 }
 
@@ -464,12 +467,15 @@ h4, .delta {
 .wrapper {
   width: 90%;
   max-width: 1000px;
-  margin: 0 auto;
   overflow: hidden;
-  padding-top: .7em;
-  height: auto;
+  height: auto !important;
   min-height: 100%;
   background: #fff;
+  margin: 0 auto -75px;
+}
+
+.push {
+  height: 75px;
 }
 
 /* line 17, ../sass/base/_layout.scss */
@@ -491,6 +497,7 @@ h4, .delta {
 /* line 29, ../sass/base/_layout.scss */
 .main-content {
   clear: both;
+  overflow: hidden;
 }
 
 /* line 33, ../sass/base/_layout.scss */
@@ -903,8 +910,7 @@ header .subtitle {
 }
 /* line 35, ../sass/objects/_post-box.scss */
 .post-box .small {
-  font-size: 13px;
-  font-size: 0.92857rem;
+  font-size: 15px;
 }
 /* line 39, ../sass/objects/_post-box.scss */
 .post-box .post-text {
@@ -914,7 +920,7 @@ header .subtitle {
 }
 /* line 43, ../sass/objects/_post-box.scss */
 .post-box .post-text p {
-  max-height: 270px;
+  max-height: 264px;
   overflow: hidden;
   line-height: 1.5em;
   font-size: 15px;
@@ -1009,6 +1015,8 @@ h1.entry {
 /* line 5, ../sass/objects/_footer.scss */
 footer {
   color: #ccc;
+  height: 75px;
+  clear: both;
 }
 /* line 7, ../sass/objects/_footer.scss */
 footer .wrapper {
@@ -1224,5 +1232,11 @@ aside .sidebar-list li {
 
 .pagination.entry {
   margin-top: 2em;
+}
+
+#owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
