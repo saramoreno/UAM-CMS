@@ -721,7 +721,7 @@ table {
 /* line 5, ../sass/objects/_navegacion.scss */
 .main-nav {
   background: #354144;
-  border: 1px solid #262626;
+  border: 1px solid #797576;
 }
 
 .main-nav li {
@@ -796,7 +796,7 @@ table {
    display: block;
    width: 100%;
    text-align: left;
-   border-bottom: 1px solid #262626;
+   border-bottom: 1px solid #797576;
   }
   .main-nav li:hover, .main-nav li:active {
     background: #65666b;

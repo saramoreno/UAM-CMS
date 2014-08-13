@@ -35,6 +35,10 @@ aside p {
 	margin-bottom: 3px;
 }
 
+.post-box p {
+	color: #65666b;
+}
+
 .sidebar-list li {
 	padding-bottom: 10px;
 	list-style-type: disc;
@@ -46,7 +50,7 @@ aside p {
 }
 
 .icon-long-arrow-right {
-	background: url("../img/arrow-right.png") no-repeat top right;
+	/*background: url("../img/arrow-right.png") no-repeat top right;*/
 	color: transparent;
 	color: #fff;
 	font-weight: 300;
