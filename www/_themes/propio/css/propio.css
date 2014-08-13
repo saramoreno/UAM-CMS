@@ -165,7 +165,7 @@ h1, h2, h2, h3, h4, h6 {
 
 /* line 41, ../sass/base/_base.scss */
 p {
-  line-height: 1.8;
+  line-height: 1.6;
   font-size: 15px;
 }
 
@@ -439,7 +439,8 @@ h4, .delta {
 .big-heading {
   font-size: 30px;
   font-weight: 200;
-  margin: .5em 0 1em 0;
+  margin: .5em 0 1.5em 0;
+  text-align: center;
 }
 
 /* line 41, ../sass/base/_headings.scss */
@@ -886,69 +887,6 @@ header .subtitle {
   }
 }
 
-/* line 5, ../sass/objects/_post-box.scss */
-.post-box, .new-box {
-  border-bottom: 1px solid #e7e9ec;
-  padding: .5em 1em 1em 0;
-  margin-bottom: 2em;
-  overflow: hidden;
-}
-/* line 10, ../sass/objects/_post-box.scss */
-.post-box .post-title, .new-box .new-title {
-  margin-bottom: 2em;
-}
-/* line 12, ../sass/objects/_post-box.scss */
-.post-box .post-title a h2, .new-title h2 {
-  color: #333;
-}
-
-.new-title a:hover {
-  text-decoration: none;
-}
-
-.post-title a {
-  text-decoration: none;
-}
-/* line 21, ../sass/objects/_post-box.scss */
-.post-box figure {
-  display: inline-block;
-  width: 30%;
-  min-width: 180px;
-  background: center no-repeat; 
-  background-size: cover;
-  height: 300px;
-  vertical-align: top;
-  overflow: hidden;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-}
-/* line 30, ../sass/objects/_post-box.scss */
-.post-box figure img {
-  min-width: 100%;
-}
-/* line 35, ../sass/objects/_post-box.scss */
-.post-box .small, .new-box .small {
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.entry-date {
-  font-size: 12px;
-}
-/* line 39, ../sass/objects/_post-box.scss */
-.post-box .post-text {
-  display: inline-block;
-  width: 64%;
-  padding-left: 1em;
-}
-/* line 43, ../sass/objects/_post-box.scss */
-.post-box .post-text p {
-  max-height: 264px;
-  overflow: hidden;
-  line-height: 1.5em;
-  font-size: 15px;
-}
 @media only screen and (max-width: 49.92857em) {
   /* line 51, ../sass/objects/_post-box.scss */
   .post-box figure {
@@ -1021,16 +959,131 @@ header .subtitle {
     min-width: 250px;
   }
 }
+.post-box .post-text {
+  max-height: 135px;
+  overflow: hidden;
+}
 .new-box {
+  padding: 30px 0;
+  border-top: 1px solid #eee;
+}
+
+.post-box {
+  padding: 30px 0 45px 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.post-box .more {
+  position: absolute;
+  bottom: 6px;
+  left: 79px;
+  font-size: 13px;
+}
+
+.new-box figure, .post-box figure {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  -webkit-border-radius: 3px;
+  -mozborder-radius: 3px;
+  border-radius: 3px;
+  margin: 1px 10px 0 0;
+}
+
+.new-text p, .post-text p {
+  clear: both;
+  font-size: 16px;
+}
+
+.new-text, .post-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+}
+
+.new-text .small, .post-text .small {
+  float: right;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.new-title h2, .post-text h2 {
+  float: left;
+  font-size: 18px;
+  color: #555;
+  padding-bottom: 10px;
+  line-height: 1.2em;
+  max-width: 380px;
+}
+
+.entry-date {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 49.92857em) {
+  /* line 99, ../sass/objects/_post-box.scss */
+  .new-box .small {
+    float: none;
+    display: block;
+  }
+  .new-box h2 {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  .new-box .new-title {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .new-box figure {
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px;
+  }
+  .new-box .new-text {
+    width: 100%;
+  }
+  .new-text-sm p {
+    display: none;
+  }
+  figure.researches {
+    display: inline-block;
+    width: 30%;
+  }
+}
+
+.entry h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.entry .small {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.entry .title {
+  text-align: center;
+  margin-bottom: 30px;
   border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 10px;
 }
 
-.new-box p {
-  margin-top: 1em;
+.new-text-sm {
+  max-height: 77px;
+  overflow: hidden;
 }
 
-h1.entry {
-  margin-bottom: 0;
+.post-entry .text {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 
@@ -1114,38 +1167,36 @@ footer p {
 }
 
 
-.icon-long-arrow-left:before {
-  content: "\e608";
-}
-.icon-prev:before {
-  content: "\e609";
-}
-.icon-prev2:before {
-  content: "\e60a";
-}
-.icon-long-arrow-right:before {
-  content: "\e605";
-}
-.icon-next:before {
-  content: "\e606";
-}
-.icon-next2:before {
-  content: "\e607";
-}
-.icon-arrow-right:before {
-  content: "\e604";
-}
-.icon-arrow-left:before {
-  content: "\e603";
-}
-.icon-googleplus:before {
+
+.icon-user:before {
   content: "\e600";
 }
+.icon-googleplus:before {
+  content: "\e603";
+}
 .icon-facebook:before {
-  content: "\e601";
+  content: "\e604";
 }
 .icon-twitter:before {
+  content: "\e605";
+}
+.icon-pencil:before {
+  content: "\e601";
+}
+.icon-calendar:before {
   content: "\e602";
+}
+.icon-arrow-left:before {
+  content: "\e606";
+}
+.icon-arrow-right:before {
+  content: "\e607";
+}
+.icon-arrow-left2:before {
+  content: "\e608";
+}
+.icon-arrow-right2:before {
+  content: "\e609";
 }
 
 /*------------------------------------------*\
@@ -1206,6 +1257,14 @@ aside .sidebar-list li {
   margin-left: 1em;
   font-size: 15px;
 }
+
+.main-list a {
+  color: #65666b;
+}
+
+.main-list a:hover {
+  text-decoration: underline;
+}
 /* line 11, ../sass/objects/_main-list.scss */
 .main-list li p {
   margin-top: 1em;
@@ -1240,6 +1299,7 @@ aside .sidebar-list li {
   display: inline-block;
   border: 1px solid #f1f1f1;
   padding: 8px;
+  margin-top: 20px;
 }
 
 .pagination .pag-list {
@@ -1250,7 +1310,7 @@ aside .sidebar-list li {
   background: #f1f1f1;
 }
 
-.pagination .icon-prev2, .pagination .icon-next2 {
+.pagination .icon-arrow-right, .pagination .icon-arrow-left {
   font-size: 30px;
   vertical-align: middle;
 }
@@ -1269,7 +1329,7 @@ aside .sidebar-list li {
   height: auto;
 }
 
-.older, .older:hover, .more, .more:hover {
+.older, .older:hover, .newer, .newer:hover, .more, .more:hover {
   text-decoration: none;
 }
 
@@ -1277,4 +1337,11 @@ aside .sidebar-list li {
   color: #ccc;
   margin-left: 2px;
   letter-spacing: 0.8px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: #f1f1f1;
+  margin-bottom:40px;
 }

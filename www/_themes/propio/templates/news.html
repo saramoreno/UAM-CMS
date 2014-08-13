@@ -5,20 +5,18 @@
 		<article>
       {{ entries:listing folder="novedades" limit="6" sort_dir="desc" paginate="true" }}
         <div class="new-box">
-          <div class="new-title">
-            <a href="{{ url }}">
+          {{ if image }}
+          <figure style="background: url({{ image }})no-repeat;background-size: cover;; background-position: center center"></figure>
+          {{ else }}
+           <figure style="background: url(/assets/img/blog/images.jpeg) no-repeat;background-size: cover;background-position: center center"></figure>
+          {{ endif }}
+          <div class="new-text">
+            <div class="new-title">
               <h2>{{ title }}</h2>
-            </a>
-            {{ member:profile username=author }}
-              <span class="small">Publicado el <span class="entry-date">{{ date }}</span> por <a href="#"> {{ first_name }} {{ last_name}} </a></span>
+              {{ member:profile username=author }}
+              <span class="small"><span class="entry-date">{{ date }}</span> &nbsp;•&nbsp; <a href="#"> {{ first_name }} {{ last_name}} </a></span>
             {{ member }}
           </div>
-          <!-- {{ if image }}
-          <figure class="left" style="background: url({{ image }});background-size: cover;"></figure>
-            {{ else }}
-          <figure class="left" style="background: url(/assets/img/woods.jpg);background-size: cover;"></figure>
-            {{ endif }} -->
-          <div class="new-text">
             <p>
               {{ content }}
             </p>
@@ -32,10 +30,10 @@
           <div class="pagination">
             <div class="pag-list">
               {{ if next_page}}
-                <a href="{{ next_page }}" class="older"><span class="icon-prev2"></span><span class="text">Más antiguos</span></a>
+                <a href="{{ next_page }}" class="older"><span class="icon-arrow-left"></span><span class="text">Más antiguos</span></a>
               {{ endif }}
               {{ if previous_page }}
-                <a href="{{ previous_page }}" class="newer">Más nuevos<span class="icon-next2"></span></a>
+                <a href="{{ previous_page }}" class="newer">Más nuevos<span class="icon-arrow-right"></span></a>
               {{ endif }}
             </div>
           </div>

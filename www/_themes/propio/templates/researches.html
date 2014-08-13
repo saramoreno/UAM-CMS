@@ -2,10 +2,40 @@
 <div class="main-content">
   <div class="big-inner-wrapper">
      <p class="big-heading">{{ title }}</p>
-     <ul class="main-list list-sm">
-     	{{ entries:listing }}
-       <li><a href="{{ url }}">{{ title }}</a></li>
+     {{ entries:listing folder="investigadores" limit="10" sort_dir="desc" paginate="true" }}
+     <div class="new-box">
+        {{ if image }}
+        <a href="{{ url }}">
+          <figure style="background: url({{ image }})no-repeat;background-size: cover;; background-position: center center"></figure>
+        </a>
+        {{ else }}
+         <a href="{{ url }}">
+          <figure style="background: url(/assets/img/user.jpeg) no-repeat;background-size: cover;background-position: center center"></figure>
+        </a>
+        {{ endif }}
+        <div class="new-text new-text-sm">
+          <div class="new-title">
+            <a href="{{ url }}"><h2>{{ title }}</h2></a>
+          </div>
+          <p>
+            {{ description }}
+          </p>
+        </div>
+      </div>
       {{ /entries:listing }}
-     </ul>
+      {{ entries:pagination folder="investigadores" limit="10" }}
+        {{ if next_page || previous_page }}
+          <div class="pagination">
+            <div class="pag-list">
+              {{ if next_page}}
+              <a href="{{ next_page }}" class="older">Más<span class="icon-arrow-left"></span></a>
+              {{ endif }}
+              {{ if previous_page }}
+              <a href="{{ previous_page }}" class="newer"><span class="icon-arrow-right"></span><span class="text">Volver</span></a>
+              {{ endif }}
+            </div>
+          </div>
+        {{ endif }}
+      {{ /entries:pagination }}
   </div>
 </div>

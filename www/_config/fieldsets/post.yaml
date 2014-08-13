@@ -16,9 +16,6 @@ fields:
     	height: 300
     	quality: 60
     	upsize: false
-  summary:
-  	display: Resumen
-  	type: textarea
   image:
 	  display: Imagen de Cabecera
 	  type: file

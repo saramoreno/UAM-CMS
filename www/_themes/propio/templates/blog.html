@@ -5,23 +5,23 @@
       <ul>
       {{ entries:listing folder="blog" limit="6" sort_dir="desc" paginate="true" }}
         <li class="post-box">
-          <div class="post-title">
-            <a href="{{ url }}">
-              <h2>{{ title }}</h2>
-            </a>
-            {{ member:profile username=author }}
-              <span class="small">Publicado el <span class="entry-date">{{ date }}</span> por <a href="{{ taxonomy_name }}"> {{ first_name }} {{ last_name}} </a></span>
-            {{ member }}
-          </div>
           {{ if image }}
             <figure class="left" style="background: url({{ image }});background-size: cover;"></figure>
           {{ else }}
            <figure class="left" style="background: url(/assets/img/woods.jpg);background-size: cover;"></figure>
           {{ endif }}
           <div class="post-text">
-            <p>{{ summary }}</p>
-            <a class="more" href="{{ url }}">Sigue leyendo<span class="icon icon-long-arrow-right"></a>
+            <div class="post-title">
+              <a href="{{ url }}">
+                <h2>{{ title }}</h2>
+              </a>
+              {{ member:profile username=author }}
+             <span class="small"><span class="entry-date">{{ date }}</span> &nbsp;•&nbsp; <a href="{{ taxonomy_name }}"> {{ first_name }} {{ last_name}} </a></span>
+              {{ member }}
+            </div>
+            <p>{{ content }}</p>
           </div>
+          <a class="more" href="{{ url }}">Sigue leyendo<span class="icon icon-arrow-right2"></a>
         </li>
        {{ /entries:listing }}
       </ul>
@@ -32,10 +32,10 @@
         <div class="pagination">
           <div class="pag-list">
             {{ if next_page}}
-              <a href="{{ next_page }}" class="older"><span class="icon-prev2"></span><span class="text">Posts antiguos</span></a>
+              <a href="{{ next_page }}" class="older"><span class="icon-arrow-left"></span><span class="text">Posts antiguos</span></a>
             {{ endif }}
             {{ if previous_page }}
-              <a href="{{ previous_page }}" class="newer">Posts nuevos<span class="icon-next2"></span></a>
+              <a href="{{ previous_page }}" class="newer">Posts nuevos<span class="icon-arrow-right"></span></a>
             {{ endif }}
           </div>
         </div>
