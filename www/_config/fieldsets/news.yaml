@@ -18,5 +18,10 @@ fields:
     type: users
     required: true
     hide: true
+  image:
+    display: Imagen de Cabecera
+    type: file
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img
 
 hide: true
