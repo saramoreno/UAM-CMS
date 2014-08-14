@@ -49,7 +49,7 @@ aside p {
 	color: #65666b;
 }
 
-.icon-long-arrow-right {
+.icon-arrow-right2, .icon-arrow-left, .icon-arrow-right {
 	/*background: url("../img/arrow-right.png") no-repeat top right;*/
 	color: transparent;
 	color: #fff;

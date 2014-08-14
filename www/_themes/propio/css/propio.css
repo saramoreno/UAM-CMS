@@ -115,16 +115,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-stretch: normal;
 }
 
-@font-face {
-  font-family: "ArmWrestler";
-  src: url("../fonts/ArmWrestler-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/ArmWrestler-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ArmWrestler-webfont.woff") format("woff"), url("../fonts/ArmWrestler-webfont.ttf") format("truetype"), url("../fonts/ArmWrestler-webfont.svg#ArmWrestler") format("svg");
-  /* Legacy iOS */
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-}
 /* Tipos */
 /* Global */
 /* line 13, ../sass/base/_base.scss */
@@ -175,7 +165,8 @@ span, li {
 
 /* line 45, ../sass/base/_base.scss */
 .big-p {
-  line-height: 2em;
+  line-height: 1.8em;
+  padding-top: 1.3em;
 }
 
 /* line 49, ../sass/base/_base.scss */
@@ -420,7 +411,9 @@ h1, .alpha {
 h2, .beta {
   font-size: 24px;
   font-size: 1.71429rem;
-  font-family: "ArmWrestler";
+  /*font-family: 'Abril Fatface', cursive;
+  font-weight: 300;
+  letter-spacing: 1px;*/
 }
 
 /* line 12, ../sass/base/_headings.scss */
@@ -439,8 +432,9 @@ h4, .delta {
 .big-heading {
   font-size: 30px;
   font-weight: 200;
-  margin: .5em 0 1.5em 0;
+  margin: 0 0 1em 0;
   text-align: center;
+  font-family: 'Abril Fatface', cursive;
 }
 
 /* line 41, ../sass/base/_headings.scss */
@@ -448,7 +442,7 @@ h4, .delta {
   font-weight: 700;
   font-size: 35px;
   margin: 0 0 .5em 0;
-  font-family: "ArmWrestler";
+  font-family: 'Abril Fatface', cursive;
 }
 
 .bold-heading a:hover {
@@ -834,6 +828,7 @@ table {
   width: 100%;
   height: 289px;
   max-height: 282px;
+  min-height: 289px;
 }
 
 /* line 6, ../sass/objects/_header.scss */
@@ -897,6 +892,7 @@ header .subtitle {
   /* line 57, ../sass/objects/_post-box.scss */
   .post-box .post-text {
     width: 100%;
+    text-overflow: ellipsis;
   }
 }
 /* line 63, ../sass/objects/_post-box.scss */
@@ -915,7 +911,7 @@ header .subtitle {
 
 /* line 76, ../sass/objects/_post-box.scss */
 .post-entry {
-  margin-top: 1.5em;
+  margin-top: 2.5em;
 }
 .post-entry figure {
   width: 35%;
@@ -960,12 +956,12 @@ header .subtitle {
   }
 }
 .post-box .post-text {
-  max-height: 135px;
+  max-height: 127px;
   overflow: hidden;
 }
 .new-box {
   padding: 30px 0;
-  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .post-box {
@@ -977,7 +973,7 @@ header .subtitle {
 .post-box .more {
   position: absolute;
   bottom: 6px;
-  left: 79px;
+  left: 89px;
   font-size: 13px;
 }
 
@@ -992,7 +988,7 @@ header .subtitle {
   -webkit-border-radius: 3px;
   -mozborder-radius: 3px;
   border-radius: 3px;
-  margin: 1px 10px 0 0;
+  margin: 1px 20px 0 0;
 }
 
 .new-text p, .post-text p {
@@ -1017,7 +1013,7 @@ header .subtitle {
   float: left;
   font-size: 18px;
   color: #555;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   line-height: 1.2em;
   max-width: 380px;
 }
@@ -1070,8 +1066,7 @@ header .subtitle {
 
 .entry .title {
   text-align: center;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #f1f1f1;
+/*  border-bottom: 1px solid #f1f1f1;*/
   padding-bottom: 10px;
 }
 
@@ -1257,7 +1252,9 @@ aside .sidebar-list li {
   margin-left: 1em;
   font-size: 15px;
 }
-
+.main-list {
+  padding-top: 1.3em;
+}
 .main-list a {
   color: #65666b;
 }
@@ -1340,8 +1337,8 @@ aside .sidebar-list li {
 }
 
 .divider {
-  height: 1px;
+  height: 4px;
   width: 100%;
-  background: #f1f1f1;
-  margin-bottom:40px;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
 }
