@@ -5,6 +5,7 @@
       <ul>
       {{ entries:listing folder="blog" limit="6" sort_dir="desc" paginate="true" }}
         <li class="post-box">
+         <a href="{{ url }}">
           {{ if image }}
             <figure class="left" style="background: url({{ image }});background-size: cover;"></figure>
           {{ else }}
@@ -22,6 +23,7 @@
             <p>{{ content }}</p>
           </div>
           <a class="more" href="{{ url }}">Sigue leyendo<span class="icon icon-arrow-right2"></a>
+        </a>
         </li>
        {{ /entries:listing }}
       </ul>
