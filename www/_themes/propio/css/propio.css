@@ -132,7 +132,6 @@ body {
   line-height: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 0.8px;
 }
 
 body, html, .main {
@@ -156,11 +155,7 @@ h1, h2, h2, h3, h4, h6 {
 /* line 41, ../sass/base/_base.scss */
 p {
   line-height: 1.6;
-  font-size: 15px;
-}
-
-span, li {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /* line 45, ../sass/base/_base.scss */
@@ -709,6 +704,56 @@ table {
 }
 
 /*------------------------------------------*\
+    Hero
+\*------------------------------------------*/
+
+.hero .big-image {
+  background: url(/assets/img/hero4.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.hero .mask {
+  background: rgba(0, 0, 0, .5);
+  text-align: center;
+}
+
+.hero .mask a {
+  color: #fff;
+  font-size: 40px;
+  display: block;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.mobile-title {
+  display: none;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.mobile-title a {
+  color: #65666B;
+}
+
+.mobile-title a:hover {
+  text-decoration: none;
+}
+
+.hero .mask a:hover {
+  text-decoration: none;
+}
+
+.hero .mask span {
+  color: #fff;
+}
+
+.hero .mask .title {
+  padding: 60px 0;
+}
+
+
+/*------------------------------------------*\
     Nav
 \*------------------------------------------*/
 /* line 5, ../sass/objects/_navegacion.scss */
@@ -735,7 +780,7 @@ table {
 /* line 11, ../sass/objects/_navegacion.scss */
 .main-nav a {
   padding: 15px 0;
-  display: inline-block;
+  display: block;
   color: #6c868c;
   text-transform: uppercase;
   vertical-align: middle;
@@ -745,14 +790,14 @@ table {
 .main-nav a span {
   display: inline-block;
   vertical-align: middle;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .main-nav a:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  height: 25px;
+  height: 28px;
 }
 
 /* line 20, ../sass/objects/_navegacion.scss */
@@ -777,11 +822,28 @@ table {
   .hero {
     position: relative;
   }
-  .hero img {
-    min-height: 390px;
+
+  .mobile-title {
+    display: block;
+  }
+
+  .hero .big-image, .hero .mask {
+    min-height: 415px;
+  }
+
+  .hero .mask {
+    padding-right: 20px;
+  }
+
+  .hero .title {
+   display: none;
+  }
+
+  .hero .title a {
+    font-size: 30px;
   }
   .main-nav {
-    width: 230px;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -794,7 +856,7 @@ table {
    padding: 0 15px;
   }
   .main-nav a span {
-    font-size: 12px;
+    font-size: 14px;
   }
   .main-nav li:hover, .main-nav li:active {
     background: #65666b;
@@ -806,7 +868,7 @@ table {
     border-left-color: #fff;
     position: absolute;
     left: -1px;
-    top: 35%;
+    top: 39%;
     content:"";
     display: block;
   }
@@ -1290,7 +1352,8 @@ aside .sidebar-list li {
   padding: .8em 0;
   list-style-type: square;
   margin-left: 1em;
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.6em;
 }
 .main-list a {
   color: #65666b;
