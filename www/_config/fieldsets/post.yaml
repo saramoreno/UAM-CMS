@@ -26,5 +26,6 @@ fields:
 		type: users
 		required: true
 		hide: true
-
-hide: true
+  month:
+    type: hidden
+    default: {{ current_date format="FY"}}

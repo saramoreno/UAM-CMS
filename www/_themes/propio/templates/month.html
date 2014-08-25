@@ -2,7 +2,7 @@
   <div class="inner-wrapper">
     <div class="gi two-thirds main-blog">
       <ul>
-      {{ entries:listing folder="blog" limit="6" sort_dir="desc" paginate="true" taxonomy="true"}}
+      {{ entries:listing folder="blog" limit="6" sort_dir="desc" paginate="true" since="first day of {taxonomy_slug}" until="last day of {taxonomy_slug}"}}
         <li class="post-box">
          <a href="{{ url }}">
           {{ if image }}

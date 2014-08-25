@@ -1,4 +1,3 @@
-
 <div class="main-content">
   <div class="inner-wrapper">
     <div class="gi two-thirds main-blog">
@@ -17,7 +16,7 @@
                 <h2>{{ title }}</h2>
               </a>
               {{ member:profile username=author }}
-             <span class="small"><span class="entry-date">{{ date }}</span> &nbsp;•&nbsp; <a href="{{ taxonomy_name }}"> {{ first_name }} {{ last_name}} </a></span>
+             <span class="small"><span class="entry-date">{{ date }}</span> &nbsp;•&nbsp; <a href="/blog/author/{{ author }}"> {{ first_name }} {{ last_name}} </a></span>
               {{ member }}
             </div>
             <p>{{ content }}</p>

@@ -5,5 +5,7 @@ email: maria_miguelanez@hotmail.com
 roles:
   - member
   - admin
-password: "maria"
+password: ""
+_uid: LpTMkL53fb751e95e2aMvwGNfGY
+password_hash: $2a$08$PgIppyqlb6rb.TeL4thdEeukhf62m6G8sIWb..fxkkbtJpxtqYDim
 ---
