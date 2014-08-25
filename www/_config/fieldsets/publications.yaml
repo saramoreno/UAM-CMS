@@ -1,7 +1,0 @@
-fields: 
-	slug:
-	  hide: true
-	content:
-    type: redactor
-    display: Publicaciones
-hide: true
