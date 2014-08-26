@@ -1,0 +1,6 @@
+INFO|Tue, 26 Aug 2014 11:57:30 +0200|site|favicon|/favicon.ico|10.0.2.2|dev|The site favicon could not be found.
+ERROR|Tue, 26 Aug 2014 11:58:13 +0200|page|content|/assets/img/blog/img6.jpg|10.0.2.2|dev|404 - Page not found. There is a bad link on <a href="/blog/author/sara">/blog/author/sara</a>.
+ERROR|Tue, 26 Aug 2014 12:11:58 +0200|visitor|content|/new|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Tue, 26 Aug 2014 12:12:03 +0200|visitor|content|/news|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Tue, 26 Aug 2014 12:12:21 +0200|visitor|content|/novedades/author|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+ERROR|Tue, 26 Aug 2014 12:12:31 +0200|visitor|content|/blog/author|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.

@@ -1,7 +1,7 @@
 ---
 title: nueva entrada de blog
 author: sara
-image: '{{ _site_root }}assets/img/blog/img6.jpg'
+image: '{{ _site_root }}assets/img/blog/maldives.jpg'
 categories:
   - historia contemporanea
   - economia

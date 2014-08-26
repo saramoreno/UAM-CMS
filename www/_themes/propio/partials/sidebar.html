@@ -20,7 +20,7 @@
   </ul>
   <h3 class="sidebar-title">Mes de publicación</h3>
   <ul class="sidebar-list">
-    {{ entries:listing folder="blog" type="date"  group_by_date = "true" group_by_date="F-Y" }}
+    {{ entries:listing folder="blog" type="date"  group_by_date = "true" group_by_date="F-Y" limit="6"}}
       {{ if grouped_date }}
         <li><a href="/blog/month/{{ grouped_date }}">{{ grouped_date }}</a></li>
       {{ endif }}
