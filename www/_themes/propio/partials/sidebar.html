@@ -13,15 +13,17 @@
   </ul>
   <h3 class="sidebar-title">Categorías</h3>
   <ul class="sidebar-list">
-   {{ taxonomy:listing folder="blog" type="categories"}}
+   {{ taxonomy:listing folder="blog" type="categories" limit="10"}}
    	 <li {{ if name == taxonomy_name}} class="on"{{ endif }}>
    	 	<a href="{{ url }}">{{ name }} </a><span class="result">({{ results }})</span></li>
   	{{ /taxonomy:listing }}
   </ul>
   <h3 class="sidebar-title">Mes de publicación</h3>
   <ul class="sidebar-list">
-   {{ taxonomy:listing folder="blog" since="29 Jun" }}
-   	 <li><a href="{{ url }}">{{ name }}</a></li>
-  	{{ /taxonomy:listing }}
+    {{ entries:listing folder="blog" type="date"  group_by_date = "true" group_by_date="F-Y" }}
+      {{ if grouped_date }}
+        <li><a href="/blog/month/{{ grouped_date }}">{{ grouped_date }}</a></li>
+      {{ endif }}
+	{{ /entries:listing }}
   </ul>
 </aside>
