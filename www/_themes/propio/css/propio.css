@@ -34,6 +34,10 @@ ol, ul {
   list-style: none;
 }
 
+hr {
+  color: #f1f1f1;
+}
+
 /* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
@@ -1200,13 +1204,13 @@ footer .wrapper {
 /* line 10, ../sass/objects/_footer.scss */
 footer .sub-footer {
   background: #262626;
-  padding: .2em 0;
 }
 /* line 14, ../sass/objects/_footer.scss */
 footer p {
   text-align: center;
   font-size: 10px;
-  font-size: 0.71429rem;
+  font-size: 13px;
+  padding: 10px 0;
 }
 
 /* line 20, ../sass/objects/_footer.scss */

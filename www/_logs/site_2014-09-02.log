@@ -1,0 +1,4 @@
+INFO|Tue, 02 Sep 2014 20:37:27 +0200|site|favicon|/favicon.ico|10.0.2.2|dev|The site favicon could not be found.
+ERROR|Tue, 02 Sep 2014 20:43:24 +0200|template|parser|/grupo-de-investigacion|10.0.2.2|dev|Cannot display tag `{{ _site_name }}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Tue, 02 Sep 2014 20:43:24 +0200|template|parser|/grupo-de-investigacion|10.0.2.2|dev|Cannot display tag `{{ _site_name}}` because it is a list, not a single value. To display list values, use a tag-pair.
+ERROR|Tue, 02 Sep 2014 20:43:24 +0200|template|parser|/grupo-de-investigacion|10.0.2.2|dev|Cannot display tag `{{ _site_name}}` because it is a list, not a single value. To display list values, use a tag-pair.
