@@ -1,0 +1,10 @@
+---
+first_name: Juan Luis
+last_name: Pan-Montojo
+email: juanluis.pan@uam.es
+roles:
+  - member
+  - admin
+password: "juanluis"
+
+---

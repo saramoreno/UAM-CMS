@@ -1,0 +1,10 @@
+---
+first_name: Irene
+last_name: Moreno
+email: irene.moreno@uam.com
+roles:
+  - member
+  - admin
+password: "irene"
+
+---

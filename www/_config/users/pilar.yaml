@@ -1,0 +1,10 @@
+---
+first_name: Pilar
+last_name: Toboso Sánchez
+email: pilar.toboso@uam.es
+roles:
+  - member
+  - admin
+password: "pilar"
+
+---

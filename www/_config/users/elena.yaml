@@ -1,0 +1,10 @@
+---
+first_name: Elena
+last_name: Sánchez Madariaga
+email: elena.sanchezmadariaga@gmail.com
+roles:
+  - member
+  - admin
+password: "elena"
+
+---

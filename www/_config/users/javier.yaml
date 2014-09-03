@@ -1,0 +1,10 @@
+---
+first_name: Javier
+last_name: Pérez Núñez
+email: javier.perez@uam.es
+roles:
+  - member
+  - admin
+password: "javier"
+
+---

@@ -1,0 +1,11 @@
+---
+first_name: Carmen
+last_name: García
+email: carmen.garcia.garcia@uam.es
+roles:
+  - member
+  - admin
+password: "carmengarcia"
+_uid: D3BzYW540750fd875c0QQ8jX3Lh
+password_hash: $2a$08$hdWZSVFEWWJrEWwD87.Sm.VO1/2tBkULfr/Q.xtfiGv/yqf2TIA5u
+---
