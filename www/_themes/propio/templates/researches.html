@@ -3,7 +3,7 @@
   <div class="big-inner-wrapper">
      <p class="big-heading">{{ title }}</p>
      <div class="divider nm"></div>
-     {{ entries:listing folder="investigadores" limit="10" sort_dir="desc" paginate="true" }}
+     {{ entries:listing folder="investigadores" limit="13" sort_dir="desc" paginate="true" }}
      <div class="new-box">
         {{ if image }}
         <a href="{{ url }}">
@@ -24,15 +24,15 @@
         </div>
       </div>
       {{ /entries:listing }}
-      {{ entries:pagination folder="investigadores" limit="10" }}
+      {{ entries:pagination folder="investigadores" limit="13" }}
         {{ if next_page || previous_page }}
           <div class="pagination">
             <div class="pag-list">
               {{ if next_page}}
-              <a href="{{ next_page }}" class="older">Más<span class="icon-arrow-left"></span></a>
+              <a href="{{ next_page }}" class="older">Más<span class="icon-arrow-right"></span></a>
               {{ endif }}
               {{ if previous_page }}
-              <a href="{{ previous_page }}" class="newer"><span class="icon-arrow-right"></span><span class="text">Volver</span></a>
+              <a href="{{ previous_page }}" class="newer"><span class="icon-arrow-left"></span><span class="text">Volver</span></a>
               {{ endif }}
             </div>
           </div>
