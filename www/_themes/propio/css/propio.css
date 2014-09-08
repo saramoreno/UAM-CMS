@@ -667,7 +667,7 @@ p {
 
 /* line 58, ../sass/base/_normalize.scss */
 ::selection {
-  background: #f5f6f7;
+  background: #ccc;
   color: #FFF;
 }
 
@@ -969,9 +969,9 @@ header .subtitle {
 .more .icon {
   padding-left: .3em;
   position: relative;
-  top: 5px;
+  top: 3px;
   left: 0;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 /* line 76, ../sass/objects/_post-box.scss */
@@ -1321,9 +1321,9 @@ aside .sidebar-list .title {
   margin-left: 0;
 }
 .sidebar-title {
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
-  margin: .5em 0;
+  margin: 20px 0 5px 0;
   font-size: 17px;
 }
 
