@@ -1,2 +1,2 @@
 echo "** mounting _content directory.."
-moun -t bind ${OPENSHIFT_DATA_DIR}_content ${OPENSHIFT_REPO_DIR}www/_content
+mount -t bind ${OPENSHIFT_DATA_DIR}_content ${OPENSHIFT_REPO_DIR}www/_content
