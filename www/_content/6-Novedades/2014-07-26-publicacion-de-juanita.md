@@ -1,5 +1,0 @@
----
-title: publicacion de juanita
-author: admin
----
-<p>El proyecto IMAGEST (Imaginarios de Estado)* se sitúa en la perspectiva de la historia cultural de lo político, a fin de estudiar la dimensión cultural de la construcción de los Estados nacionales y, concretamente, del Estado español. Buscamos estudiar los diversos imaginarios presentes en la construcción del Estado desde la segunda mitad del siglo XVIII hasta la primera mitad del XX. Algunas de las representaciones eran de carácter netamente utópico;  diseños  ideales apenas acompañados de un  plan viable  para  hacerlos realidad. Otros imaginarios se relacionaban con la observación de estados extranjeros que, frecuentemente idealizados, se tomaban como modelos de referencia a emular. Y otros surgieron del “sentido común” compartido por determinadas corporaciones y grupos sociales, tales como los funcionarios, militares, ingenieros o diplomáticos, así como juristas, comerciantes o empresarios.</p>

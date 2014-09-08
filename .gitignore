@@ -5,3 +5,5 @@ latest.tar.gz
 ./wordpress/
 /wordpress/
 /wp-tests/
+/www/_cache/_app/content
+/www/_content/
