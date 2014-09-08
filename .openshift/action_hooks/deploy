@@ -1,1 +1,4 @@
+echo "** linking _content directory"
+echo $OPENSHIFT_DATA_DIR/_content
+echo $OPENSHIFT_REPO_DIR/www/_content
 ln -s $OPENSHIFT_DATA_DIR/_content $OPENSHIFT_REPO_DIR/www/_content
