@@ -1321,7 +1321,7 @@ aside .sidebar-list .title {
   margin-left: 0;
 }
 .sidebar-title {
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   margin: .5em 0;
   font-size: 17px;
@@ -1450,4 +1450,8 @@ aside .sidebar-list li {
 
 .divider.nm {
   margin-bottom: 0;
+}
+
+.divider.sm {
+  margin: 0 0 15px 0;
 }

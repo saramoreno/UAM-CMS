@@ -1,7 +1,9 @@
 <aside class="gi one-third">
   <h3 class="sidebar-title">Sobre el blog</h3>
+  <div class="divider sm"></div>
     <p>Blog del proyecto <em>Redes de poder: España y el mundo atlántico</em> de la Universidad Autónoma de Madrid</p>
 	<h3 class="sidebar-title">Últimos posts</h3>
+  <div class="divider sm"></div>
   <ul class="sidebar-list">
   	{{ entries:listing folder="blog" limit="6" sort_dir="desc" }}
   	  {{ if no_results }}
@@ -12,6 +14,7 @@
   	{{ /entries:listing }}
   </ul>
   <h3 class="sidebar-title">Categorías</h3>
+  <div class="divider sm"></div>
   <ul class="sidebar-list">
    {{ taxonomy:listing folder="blog" type="categories" limit="10"}}
    	 <li {{ if name == taxonomy_name}} class="on"{{ endif }}>
@@ -19,6 +22,7 @@
   	{{ /taxonomy:listing }}
   </ul>
   <h3 class="sidebar-title">Mes de publicación</h3>
+  <div class="divider sm"></div>
   <ul class="sidebar-list">
     {{ entries:listing folder="blog" type="date"  group_by_date = "true" group_by_date="F-Y" limit="6"}}
       {{ if grouped_date }}
