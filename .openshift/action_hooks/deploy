@@ -1,4 +1,6 @@
 # echo "** mounting _content directory.."
 # mount -t bind ${OPENSHIFT_DATA_DIR}_content ${OPENSHIFT_REPO_DIR}www/_content
 echo "** linking _content directory.."
-ln -s ${OPENSHIFT_DATA_DIR}_content ${OPENSHIFT_REPO_DIR}www/_content
+cd ${OPENSHIFT_REPO_DIR}www
+ln -s ../../data/_content ./_content
+# ln -s ${OPENSHIFT_DATA_DIR}_content ${OPENSHIFT_REPO_DIR}www/_content
