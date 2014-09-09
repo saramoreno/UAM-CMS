@@ -1,7 +1,7 @@
 #!/bin/env bash
 echo "copying content..."
 cp -R ${OPENSHIFT_REPO_DIR}www/_content ${OPENSHIFT_DATA_DIR}content_temp
-rm ${OPENSHIFT_DATA_DIR}content_bkp.tgz
-tar xvzf ${OPENSHIFT_DATA_DIR}content_bkp.tgz ${OPENSHIFT_DATA_DIR}content
+rm -f ${OPENSHIFT_DATA_DIR}content_bkp.tgz
+tar copy_content zf ${OPENSHIFT_DATA_DIR}content_bkp.tgz ${OPENSHIFT_DATA_DIR}content
 rm -rf ${OPENSHIFT_DATA_DIR}content
 mv ${OPENSHIFT_DATA_DIR}content_temp ${OPENSHIFT_DATA_DIR}content
