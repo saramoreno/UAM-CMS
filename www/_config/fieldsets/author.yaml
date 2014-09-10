@@ -14,5 +14,7 @@ fields:
 	content:
     display: Listado de publicaciones
     type: redactor
+  order:
+    display: orden de aparición
 
 hide: true
