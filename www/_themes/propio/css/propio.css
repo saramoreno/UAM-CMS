@@ -1001,6 +1001,10 @@ header .subtitle {
   box-shadow: 1px 1px 1px 1px #ccc;
   border: 2px solid #fff;
 }
+
+.post-entry .text {
+  min-height: 286px;
+}
 /* line 83, ../sass/objects/_post-box.scss */
 .post-entry figure.left {
   margin: 0 2em 1em 0;
