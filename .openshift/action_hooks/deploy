@@ -1,0 +1,3 @@
+echo "** copying _content directory.."
+rm -rf ${OPENSHIFT_REPO_DIR}www/_content
+cp -R ${OPENSHIFT_DATA_DIR}content ${OPENSHIFT_REPO_DIR}www/_content
