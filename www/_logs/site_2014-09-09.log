@@ -1,0 +1,10 @@
+ERROR|Tue, 09 Sep 2014 21:10:18 +0200|visitor|content|/|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+FATAL|Tue, 09 Sep 2014 21:10:18 +0200|core|ContentService|/|10.0.2.2|dev|Could not find URL in structure cache.
+ERROR|Tue, 09 Sep 2014 21:10:21 +0200|visitor|content|/|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+FATAL|Tue, 09 Sep 2014 21:10:21 +0200|core|ContentService|/|10.0.2.2|dev|Could not find URL in structure cache.
+ERROR|Tue, 09 Sep 2014 21:13:32 +0200|visitor|content|/|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+FATAL|Tue, 09 Sep 2014 21:13:32 +0200|core|ContentService|/|10.0.2.2|dev|Could not find URL in structure cache.
+ERROR|Tue, 09 Sep 2014 21:13:34 +0200|visitor|content|/|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+FATAL|Tue, 09 Sep 2014 21:13:34 +0200|core|ContentService|/|10.0.2.2|dev|Could not find URL in structure cache.
+ERROR|Tue, 09 Sep 2014 21:15:03 +0200|visitor|content|/|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+FATAL|Tue, 09 Sep 2014 21:15:03 +0200|core|ContentService|/|10.0.2.2|dev|Could not find URL in structure cache.
