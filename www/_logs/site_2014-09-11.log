@@ -1,0 +1,4 @@
+ERROR|Thu, 11 Sep 2014 21:12:55 +0200|visitor|content|/|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+FATAL|Thu, 11 Sep 2014 21:12:55 +0200|core|ContentService|/|10.0.2.2|dev|Could not find URL in structure cache.
+ERROR|Thu, 11 Sep 2014 21:16:57 +0200|visitor|content|/|10.0.2.2|dev|404 - Page not found. Visitor came directly to this page and may have typed the URL incorrectly.
+FATAL|Thu, 11 Sep 2014 21:16:57 +0200|core|ContentService|/|10.0.2.2|dev|Could not find URL in structure cache.
