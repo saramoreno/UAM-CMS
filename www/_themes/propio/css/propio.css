@@ -1090,6 +1090,8 @@ header .subtitle {
 	line-height: 21px;
 	text-transform: uppercase;
 	font-size: 12px;
+	width: 47%;
+	text-align: right;
 }
 
 .new-box .text p{
@@ -1102,7 +1104,7 @@ header .subtitle {
 	color: #555;
 	padding-bottom: 3px;
 	line-height: 1.2em;
-	max-width: 380px;
+	width: 53%;
 }
 
 .entry-date {
