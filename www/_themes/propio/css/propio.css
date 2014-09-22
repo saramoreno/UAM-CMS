@@ -1118,6 +1118,10 @@ header .subtitle {
 	.wrapper {
 		width: 100%;
 	}
+  .new-text .small, .post-text .small, .new-box .text .small {
+    width: 100%;
+    text-align: center;
+  }
 	/* line 99, ../sass/objects/_post-box.scss */
 	.new-box .small, .post-box .small{
 		float: none;
