@@ -1107,6 +1107,10 @@ header .subtitle {
 	width: 53%;
 }
 
+.post-title h2:hover {
+  text-decoration: none;
+}
+
 .entry-date {
 	font-size: 12px;
 }
