@@ -1107,7 +1107,7 @@ header .subtitle {
 	width: 53%;
 }
 
-.post-title h2:hover {
+.post-title a h2:hover {
   text-decoration: none;
 }
 
