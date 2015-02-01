@@ -759,6 +759,76 @@ table {
 	padding: 60px 0;
 }
 
+.hero {
+	position: relative;
+}
+
+/*------------------------------------------*\
+    Owl slider
+\*------------------------------------------*/
+
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.owl-item {
+  display: inline-block;
+}
+
+
+.owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+}
+
+.owl-buttons .owl-prev {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: url(/_themes/propio/img/prev.png) no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  color: transparent;
+}
+
+.owl-buttons .owl-next {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #fff;
+  padding-bottom: 10px;
+  background: url(/_themes/propio/img/next.png) no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  color: transparent;
+}
+
+/*.owl-pagination {
+  padding-bottom: 50px;
+  background: red;
+}
+
+.owl-page span {
+	background: white;
+	width: 50px;
+	height: 50px;
+}*/
+
+/*.owl-theme .owl-controls {
+  margin-top: 0px !important;
+}*/
 
 /*------------------------------------------*\
 		Nav

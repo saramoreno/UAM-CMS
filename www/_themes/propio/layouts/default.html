@@ -56,14 +56,14 @@ debug information
 					<a href="{{ homepage }}">{{ _site_name}}</a>
 				</div>
 				<div class="hero">
-					<div class="big-image">
-						<div class="mask">
-							<div class="title"><a href="{{ homepage }}">{{ _site_name}}</a>
-								<span class="subtitle">Proyecto de investigación de I+D <em>La construcción de las redes de poder en la España contemporánea y sus relaciones con el mundo atlántico (s. XIX-XX) </em>. Universidad Autónoma de Madrid</span>
-							</div>
-						</div>
-				{{ theme:partial src="nav" }}
-				</div>
+          <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item"><img src="/_themes/propio/img/paris.jpg" alt="image 1"></div>
+            <div class="item"><img src="/_themes/propio/img/paris2.jpg" alt="image 1"></div>
+            <div class="item"><img src="/_themes/propio/img/sanfrancisco.jpg" alt="image 1"></div>
+          </div>
+        </div>
+        {{ theme:partial src="nav" }}
+
 			</header>
 			<div class="main" role="main">
 				{{ layout_content }}
@@ -71,5 +71,8 @@ debug information
 			<div class="push"></div>
 		</div>
 		{{ theme:partial src="footer" }}
+		<script type="text/javascript" src="/_themes/propio/javascripts/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/_themes/propio/javascripts/owl.carousel.js"></script>
+    <script type="text/javascript" src="/_themes/propio/javascripts/scripts.js"></script>
 	</body>
 </html>
