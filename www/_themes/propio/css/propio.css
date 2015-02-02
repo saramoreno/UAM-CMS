@@ -785,7 +785,7 @@ table {
 
 .owl-buttons .owl-prev {
   position: absolute;
-  left: 5px;
+  left: 15px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -813,6 +813,84 @@ table {
   height: 50px;
   width: 50px;
   color: transparent;
+}
+
+.owl-item .item{
+	height: 300px;
+	position: relative;
+}
+
+.img-1, 
+.img-2, 
+.img-3,
+.img-4 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+}
+
+.img-1:before,
+.img-2:before,
+.img-3:before,
+.img-4:before {
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	content: "";
+}
+
+.img-1 {
+	background: url(/_themes/propio/img/hero1.JPG) no-repeat 50% 50%;
+	background-size:cover;
+}
+
+.img-2 {
+	background: url(/_themes/propio/img/hero2.jpg) no-repeat 50% 23%;
+	background-size:cover;
+}
+
+.img-3 {
+	background: url(/_themes/propio/img/hero3.jpg) no-repeat center center;
+	background-size:cover;
+}
+
+.img-4 {
+	background: url(/_themes/propio/img/hero4.jpg) no-repeat 50% 16%;
+	background-size:cover;
+}
+
+.img-1 p, 
+.img-2 p, 
+.img-3 p,
+.img-4 p {
+	font-size: 40px;
+	font-family: "Abril Fatface";
+	color: #fff;
+	width: 60%;
+	line-height: 1em;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+} 
+
+.img-1 p span, 
+.img-2 p span, 
+.img-3 p span,
+.img-4 p span {
+	font-size: 16px;
+	font-family: "Locator";
+	display: block;
+	line-height: 1.2em;
+	margin-top: 10px;
 }
 
 /*.owl-pagination {
