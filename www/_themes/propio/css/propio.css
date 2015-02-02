@@ -835,7 +835,7 @@ table {
 .img-2:before,
 .img-3:before,
 .img-4:before {
-	background: rgba(0, 0, 0, .5);
+	background: rgba(0, 0, 0, .3);
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -870,6 +870,7 @@ table {
 .img-4 p {
 	font-size: 40px;
 	font-family: "Abril Fatface";
+	text-shadow: 2px 2px 1px #000;
 	color: #fff;
 	width: 60%;
 	line-height: 1em;
